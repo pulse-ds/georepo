@@ -499,6 +499,16 @@
   "source": "Gwinnett County GA GIS (official county org, Administrative service)",
   "source_url": "https://services3.arcgis.com/RfpmnkSAQleRbndX/arcgis/rest/services/Administrative/FeatureServer/6"
  },
+ "counties/ga/putnam/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Putnam County (GA) board of education districts (5, DISTRICT 001-005; 5-district board). Identified by extent (lon -83.55..-83.14, lat 33.17..33.48 = Putnam GA, Eatonton area).",
+  "features": 5,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "counties/ga/putnam/school_board_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Putnam County GA (nwilliams_MGRC county GIS account)",
+  "source_url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/Putnam_County_Board_of_Education_Districts/FeatureServer"
+ },
  "counties/id/ada/county_commission_districts/county_commission_districts_2019.geojson": {
   "description": "Ada County (ID) commissioner districts (5).",
   "features": 3,

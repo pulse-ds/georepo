@@ -2055,5 +2055,19 @@
     "expected": 15,
     "enabled": false,
     "description": "DEFERRED (retry): WAF 400 \u2014 2021 AL SBOE districts (15 expected per AL 2021 redistricting cycle); cannot verify structure yet."
+  },
+  {
+    "id": "counties/ga/putnam/school_board_districts",
+    "locale": "counties/ga/putnam",
+    "geography_type": "school_board_districts",
+    "vintage": "2025",
+    "service": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/Putnam_County_Board_of_Education_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Putnam County GA (nwilliams_MGRC county GIS account)",
+    "source_url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/Putnam_County_Board_of_Education_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 5,
+    "description": "Putnam County (GA) board of education districts (5, DISTRICT 001-005; 5-district board). Identified by extent (lon -83.55..-83.14, lat 33.17..33.48 = Putnam GA, Eatonton area)."
   }
 ]

@@ -542,7 +542,24 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **394 GeoJSON files, 2.2 GB** (round 19: 393).
 - State SBOE coverage: 3 states (TX 2021, KS, UT 2022-32).
 
-## Next (round 21+)
+## Round 21 (Putnam GA school board)
+- [x] **+1 file** (5 features; 395 total):
+  - `counties/ga/putnam/school_board_districts_2025.geojson` — 5 board
+    districts (labeled 1-5; identified by extent as central GA —
+    Forsyth GIS neighbor layer; 5-district structure).
+- [x] WAF-deferred (new): IL SBOE 2023 (4 layer variants, university
+  account), Riverside CA COE 2022 trustee areas (official RCOE).
+- [x] SBOE mining (MN/OR/WA/AZ): no district-based layers (those
+  states have at-large or single-member SBOEs).
+- [x] Catalog re-render (395 rows) + full verify.py run: **ALL GOOD** —
+  395 files, 95,403 features, 0 geometry/catalog problems.
+
+## Round 21 running totals
+- **395 GeoJSON files, 2.2 GB** (round 20: 394).
+- School-board coverage: 22 files (incl. 3 state SBOE, 2 city boards,
+  1 statewide IA set).
+
+## Next (round 22+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

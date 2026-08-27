@@ -376,7 +376,21 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (394 rows) + full verify.py run: **ALL GOOD**
       (394 files, 95,398 features).
 
-## Round 21+ (gap-filling & polish)
+## Round 21 (Putnam GA school board)
+- [x] **+1 file** (5 features; 395 total):
+  - `counties/ga/putnam/school_board_districts_2025.geojson` — 5 board
+    of education districts DISTRICT 001-005 (identified as Putnam
+    County GA by extent; first fetch had grabbed the wrong service —
+    a Forsyth-hosted sibling layer — caught by extent verification and
+    corrected).
+- [x] IL SBOE 2023 (aabhavs2 illinois.edu) + Riverside COE 2022
+  (official RCOE): both WAF-deferred.
+- [x] SBOE mining MN/OR/WA/AZ: no hits (different board structures /
+  no AGL presence).
+- [x] Catalog re-render (395 rows) + full verify.py run: **ALL GOOD**
+      (395 files, 95,403 features).
+
+## Round 22+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
