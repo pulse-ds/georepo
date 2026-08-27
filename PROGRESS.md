@@ -147,7 +147,38 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - Local level: 28 city council + 10 county commission files.
 - New tooling: tools/verify.py (repo-wide QA).
 
-## Next (round 5+)
+## Round 5 (local expansion + git policy)
+- [x] **+4 city council files** (32 city files now):
+  - Raleigh NC — 5 council districts (A-E; +4 at-large), official
+    RaleighGIS; maps.raleighnc.gov was unreachable in earlier rounds,
+    now responds.
+  - San Francisco CA — 11 supervisor districts, SF.gov AGL org
+    (current map, unlabeled polygons).
+  - Fairfield CA — 6 polygons named per current council member (official
+    city org; unofficial naming noted in catalog).
+  - Tacoma WA — 5 unlabeled polygons (council = 5 members: 3 district +
+    2 at-large; structure noted for verification).
+- [x] **Gap-city/county probes (negative results documented):** Tampa =
+  only a stale 2000 council map (rejected); Louisville, Cincinnati
+  (community councils ≠ 17 council districts), OKC, Las Vegas = no
+  usable AGL layers; Santa Clara County 2021 + Milwaukee = persistent
+  WAF 400s (retry later). NH 400-district house not on AGL (2012 maps
+  only) — stays stale. El Paso County CO retry #3 = still no layers.
+- [x] **School board seats (FL pilot)**: FL statute hosts
+  (flsenate.gov, leg.state.fl.us, flsenate statutes) all render the
+  bracket text client-side — no readable bracket table; pilot deferred
+  (DEV.md audit + plan stands).
+- [x] **Version control**: `git init` (branch `main`), `.gitignore`
+  (data/, venv, cache), two commits covering docs + tools + catalog;
+  LFS policy documented in DEV.md.
+- [x] Catalog re-render (360 rows) + full verify.py run: **ALL GOOD** —
+  360 files, 93,566 features, 0 geometry/catalog problems.
+
+## Round 5 running totals
+- **360 GeoJSON files, 2.2 GB** (round 4: 356).
+- Local level: 32 city council + 10 county commission files.
+
+## Next (round 6+)
 - School board seats data build per the DEV.md plan (pick 1–2 pilot
   states; clarify per-district local boards vs. state SBOE seats first).
 - Local-level gap-filling: Detroit, New Orleans, Philadelphia, Kansas City

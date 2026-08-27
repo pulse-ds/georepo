@@ -20,12 +20,12 @@ municipal) and then by geography type.
 | States (19) | Community school district boundaries | done (TIGER SCSD) |
 | States (56) | Municipal (incorporated place) boundaries | done (TIGER PLACE) |
 | States (56) | County subdivision boundaries | done (TIGER COUSUB) |
-| Cities (28) | City council districts | done (official city GIS / AGL) |
+| Cities (32) | City council districts | done (official city GIS / AGL) |
 | Counties (10) | County commission / equivalent districts | done (pilot; many counties at-large) |
-| States | School board seat counts per district | **planned** |
+| States | School board seat counts per district | **planned** (source audit in DEV.md) |
 
-Current totals: **356 GeoJSON files, 2.2 GB** — all WGS84, all validated
-(see `CATALOG.csv`). Local-level coverage is a growing pilot: 28 city
+Current totals: **360 GeoJSON files, 2.2 GB** — all WGS84, all validated
+(see `CATALOG.csv`). Local-level coverage is a growing pilot: 32 city
 council files + 10 county commission files, with a curated manifest of
 additional reachable sources and a documented gap list (see DEV.md).
 

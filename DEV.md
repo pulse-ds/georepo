@@ -92,6 +92,13 @@ per-district board-seat count from the reachable hosts:
   county lists only — no board-size column (checked FL, 94-line article).
 - **ICPSR / NCES PPSDC public-use microdata** (has board-size vars):
   `icpsr.umich.edu` 403s (auth-gated).
+- **Round-5 additions**: FL statutes (`flsenate.gov`,
+  `leg.state.fl.us`, `laws.flrules.org`) — hosts reachable but the
+  bracket text (F.S. 1000.0x board size) renders client-side; no
+  static text extractable. Justia (state-code mirror) 403s. Wikipedia
+  has no FL bracket table. So the FL pilot is blocked on a readable
+  bracket source; a browser-rendering fetch or a per-district
+  "board consists of N members" scrape would unblock it.
 
 **Recommendation for a future round** (if board seats are needed):
 build a **per-district enrichment CSV, not a shapefile**:
@@ -190,9 +197,15 @@ copies bad): Detroit (17-district map not on AGL), New Orleans (40
 districts; AGL copies are 5-group or ward-based), Philadelphia (17;
 official phl.data "Districts" layer is 10 unnamed polys), Kansas City MO
 (8; AGL copies missing 3), Memphis (15; DBO layer has 7), Los Angeles
-(13; maps.lacity.org unreachable; only academic copies), Austin,
-Tampa, Milwaukee, Louisville, Cincinnati, Oklahoma City, San Francisco,
-Raleigh, San Jose, Las Vegas. County gaps (round 3 findings): no Maine
+(13; maps.lacity.org unreachable; only academic copies), Austin (only
+academic copies on AGL), Tampa (arcgis.tampagov.net has ONLY a stale
+"City Council District 2000" layer — 4 of 7, rejected in round 5),
+Milwaukee (DataCurator copy 400s — retry), Louisville, Cincinnati
+(only community-council/neighborhood layers, not the 17 council
+districts), Oklahoma City, San Jose (Santa Clara County 2021
+supervisorial map 400s — retry), Las Vegas. Round-5 additions:
+Raleigh NC, San Francisco, Fairfield CA, Tacoma WA. County gaps
+(round 3 findings): no Maine
 statewide (partial service); FL beyond Lee/Collier (both verified
 district-based; Broward AGL copies all stale — per-member polygons);
 TX beyond Harris/Bexar/Galveston (Dallas + Tarrant official maps are on
