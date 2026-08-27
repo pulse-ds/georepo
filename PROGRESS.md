@@ -249,17 +249,52 @@ full-repo validation ALL GOOD). Round-by-round detail below.
   GA/Chatham, LA/St. Mary, LA/St. James, LA/St. John the Baptist,
   TN/Davidson, CA/Alameda + TX & KS state SBOE).
 
-## Next (round 9+)
+## Round 9 (MD deep-dive + gap-city/county probes)
+- [x] **+3 county commission files** (17 features; 373 total):
+  - `counties/mn/dakota/county_commission_districts_2022.geojson` — 7
+    districts (official Dakota County MN GIS, 2022 redistricting).
+  - `counties/mn/scott/county_commission_districts_2020.geojson` — 5
+    districts (official Scott County MN GIS).
+  - `counties/ga/coweta/county_commission_districts_2025.geojson` — 5,
+    per-commissioner named (official Coweta County GA account).
+- [x] **MD legislative deep-dive**: TIGER's MD house file contains only
+  71 of the 93 districts in effect (2012-2026 plan) — flagged in
+  `CATALOG.csv`. The current/2022 maps are on the official MD Planning
+  AGL org (`MD_Legislative_Districts_2022*`, `Senate_Only_Districts_2022`)
+  but the org is WAF-throttling hard (400s on repeated probes); CBF's
+  "2022" layers are the rejected lettered maps. MD replacement deferred.
+- [x] Gap-city probes: Detroit "2026" layer = 3 super-ward polygons
+  (proposed reform, rejected); Memphis 2023 official layer has only 7 of
+  13 districts (rejected; DBO variant WAF-deferred); Philly 2024 official
+  layer WAF-deferred; LA "CouncilDistricts2026" = 15 proposed districts
+  named per candidate (rejected — not current 13); KC 2022 official
+  layer WAF-deferred; Austin still nothing.
+- [x] WAF-400 school-board retry batch: all 6 still persistently blocked
+  (Santa Cruz/Kern/Santa Barbara CA, Frederick MD, Tuscaloosa AL,
+  Hillsborough FL).
+- [x] NH 400-district house: still not on AGL (2022 hits are Rhode
+  Island's) — stays stale.
+- [x] Catalog re-render (373 rows) + full verify.py run: **ALL GOOD** —
+  373 files, 93,671 features, 0 geometry/catalog problems.
+
+## Round 9 running totals
+- **373 GeoJSON files, 2.2 GB** (round 8: 370).
+- County commission files: 13 (10 + Dakota MN, Scott MN, Coweta GA).
+
+## Next (round 10+)
 - Retry the WAF-400 school-board layers (Santa Cruz/Kern/Riverside/SB/SB-
   county CA, Frederick MD, Tuscaloosa AL, Hillsborough FL); more AGL
   mining (other LA 2022 plans, IL/CO/PA school board districts).
 - Per-district board-SEAT-COUNT CSVs (governance attribute) remain
   blocked on statute sources — see DEV.md; the district-geometry
   approach above is the practical path for "seats."
-- Local-level gap-filling: Detroit, New Orleans, Philadelphia, Kansas City
-  MO, Memphis, LA, Austin, Tampa, Milwaukee, Louisville, Cincinnati, OKC,
-  San Jose, LV. More county coverage (NC/SC/MN district-based boards;
-  FL beyond Lee/Collier).
+- Local-level gap-filling: New Orleans, Tampa, Milwaukee, Louisville,
+  Cincinnati, OKC, San Jose, LV; retries (WAF-deferred): Philly 2024, KC
+  2022, Memphis DBO, Aitkin MN, El Paso CO. More county coverage (SC/NC/
+  IL district-based boards; FL beyond Lee/Collier).
+- MD replacement: retry mdplanning AGL org when the WAF eases
+  (`MD_Legislative_Districts_2022`, 105/51 plan effective 2026); the
+  71/93-district TIGER house file is flagged incomplete in the catalog.
 - El Paso County (CO): retry (ArcGIS service intermittently loses layers).
 - MD/NH/VT legislative: replace stale Census maps when a current
   state/ArcGIS source is found.

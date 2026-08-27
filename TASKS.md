@@ -142,7 +142,32 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (370 rows) + full verify.py run: **ALL GOOD**
       (370 files, 93,654 features).
 
-## Round 9+ (gap-filling & polish)
+## Round 9 (MD deep-dive + gap-city retries)
+- [x] MD legislative: TIGER MD house file is INCOMPLETE (71 of the 93
+      districts in effect 2012-2026) — flagged in catalog. 2022 plan
+      (105/51, effective 2026) unsourced: mdplanning AGL (official MD
+      Planning) WAF-throttled (400s on repeated probes), CBF layers are
+      the rejected lettered maps. No reachable current MD map yet.
+- [x] Gap-city probes: Detroit "2026" layer = 3 super-ward polygons
+      (proposed reform, not the 17-district map) → rejected; Memphis
+      2023 official layer = only 7 of 13 districts → rejected, DBO
+      variant WAF-deferred; Philly 2024 + KC 2022 (official) WAF-deferred;
+      LA "CouncilDistricts2026" = 15 proposed districts with candidate
+      names (not the current 13) → rejected.
+- [x] WAF-400 school-board retries (6): all still persistently blocked
+      (Santa Cruz/Kern/Santa Barbara CA, Frederick MD, Tuscaloosa AL,
+      Hillsborough FL) — confirmed stable blocks, not flakiness.
+- [x] County boards (MN/SC/GA discovery): 5 official candidates found
+      (Isanti/Dakota/Aitkin/Scott MN, Coweta GA) → **+3 accepted**
+      (Dakota MN 7 districts 2022, Scott MN 5, Coweta GA 5 named);
+      Isanti rejected (5 unlabeled polygons vs 3-member at-large board),
+      Aitkin deferred (county GIS host times out).
+- [x] NH 400-district house: still not on AGL (2022 hits are Rhode
+      Island's RIGIS) — stays stale.
+- [x] Catalog re-render (373 rows) + full verify.py run: **ALL GOOD**
+      (373 files, 93,671 features).
+
+## Round 10+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

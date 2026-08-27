@@ -379,6 +379,16 @@
   "source": "Cherokee County, GA (official GIS org)",
   "source_url": "https://services5.arcgis.com/UmQCfTNQbyTzAV5N/arcgis/rest/services/Commissioners_Districts/FeatureServer"
  },
+ "counties/ga/coweta/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Coweta County (GA) board of commissioners districts (5); polygons named per current commissioner (unofficial naming).",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/ga/coweta/county_commission_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Coweta County GA (official county employee account)",
+  "source_url": "https://services1.arcgis.com/AaPyNbrJpNGryRqh/arcgis/rest/services/Commission_Districts/FeatureServer"
+ },
  "counties/ga/forsyth/school_board_districts/school_board_districts_2025.geojson": {
   "description": "Forsyth County (GA) Board of Education districts (5 single-member districts; 5-district structure verified via Wikipedia 2025).",
   "features": 5,
@@ -428,6 +438,26 @@
   "published": "2022",
   "source": "St. Mary Parish 2022 adopted plan (via AGL publisher J-Mann)",
   "source_url": "https://services5.arcgis.com/NaE1rjvJf3JdTAkI/arcgis/rest/services/StMary_SBDistricts_2022/FeatureServer"
+ },
+ "counties/mn/dakota/county_commission_districts/county_commission_districts_2022.geojson": {
+  "description": "Dakota County (MN) county commissioner districts (7, single-member, labeled 1-7; 2022 redistricting).",
+  "features": 7,
+  "filename": "county_commission_districts_2022.geojson",
+  "folder": "counties/mn/dakota/county_commission_districts",
+  "lines_last_redrawn": "2022 (layer: 'County Commissioner Districts (2022)')",
+  "published": "2022",
+  "source": "Dakota County MN GIS (official)",
+  "source_url": "https://gis2.co.dakota.mn.us/arcgis/rest/services/DCGIS_OL_PoliticalAdministrative/MapServer/8"
+ },
+ "counties/mn/scott/county_commission_districts/county_commission_districts_2020.geojson": {
+  "description": "Scott County (MN) county commissioner districts (5, single-member, labeled 1-5).",
+  "features": 5,
+  "filename": "county_commission_districts_2020.geojson",
+  "folder": "counties/mn/scott/county_commission_districts",
+  "lines_last_redrawn": "2020 (5-district structure adopted 2020; vintage unverified on server)",
+  "published": "unknown",
+  "source": "Scott County MN GIS (official county org)",
+  "source_url": "https://services.arcgis.com/DqIh9WAsIZcPlBEF/arcgis/rest/services/Commissioner_Districts/FeatureServer"
  },
  "counties/nc/mecklenburg/county_commission_districts/county_commission_districts_2022.geojson": {
   "description": "Mecklenburg County (NC) board of commissioners \u2014 5 district polygons (named per commissioner) + 1 at-large countywide polygon = 6 commissioners.",
@@ -1720,7 +1750,7 @@
   "source_url": "https://www2.census.gov/geo/tiger/TIGER2025/UNSD/tl_2025_24_unsd.zip"
  },
  "states/md/state_house_districts/state_house_districts_2025.geojson": {
-  "description": "Maryland: State house of representatives districts, TIGER SLDL (lower chamber). 71 districts.",
+  "description": "Maryland state house districts (TIGER SLDL 2025). CAUTION: file contains only 71 of the 93 house districts in effect 2012-2026 (Census artifact) \u2014 do NOT use as complete coverage. 2022 redistricting plan (105 house / 51 senate, effective 2026) not yet sourced (mdplanning AGL WAF-blocked).",
   "features": 71,
   "filename": "state_house_districts_2025.geojson",
   "folder": "states/md/state_house_districts",
