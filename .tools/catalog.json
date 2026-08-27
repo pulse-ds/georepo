@@ -209,6 +209,16 @@
   "source": "City of Columbus, Ohio GIS (official)",
   "source_url": "https://services1.arcgis.com/9yy6msODkIBzkUXU/arcgis/rest/services/CouncilDistricts_2020_Round3/FeatureServer"
  },
+ "cities/ok/oklahoma_city/city_council_districts/city_council_districts_2022.geojson": {
+  "description": "Oklahoma City (OK) council wards (8, unlabeled \u2014 count matches the 8-ward structure; values absent from layer). 2 at-large members elected citywide.",
+  "features": 8,
+  "filename": "city_council_districts_2022.geojson",
+  "folder": "cities/ok/oklahoma_city/city_council_districts",
+  "lines_last_redrawn": "2022 (Wikipedia: 'OKC ward map effective 1 April 2022'; 8-ward structure)",
+  "published": "2022",
+  "source": "OKC (official employee account)",
+  "source_url": "https://services7.arcgis.com/MZ4B5pzPtWwwXYaI/arcgis/rest/services/OKC_Council_Wards/FeatureServer"
+ },
  "cities/ok/tulsa/city_council_districts/city_council_districts_2023.geojson": {
   "description": "Tulsa city council districts (7), 2023 map (file labeled 2024).",
   "features": 9,
@@ -419,6 +429,16 @@
   "source": "Forsyth County GIS (official)",
   "source_url": "https://services2.arcgis.com/StQaZGYzUARPnrpL/arcgis/rest/services/Board_of_Education_District/FeatureServer"
  },
+ "counties/ga/gwinnett/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Gwinnett County (GA) commission districts (4, labeled 1-4); 5-member board = 1 at-large chair + 4 district members (Wikipedia, 2026).",
+  "features": 4,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/ga/gwinnett/county_commission_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Gwinnett County GA GIS (official county org, Administrative service)",
+  "source_url": "https://services3.arcgis.com/RfpmnkSAQleRbndX/arcgis/rest/services/Administrative/FeatureServer/6"
+ },
  "counties/id/ada/county_commission_districts/county_commission_districts_2019.geojson": {
   "description": "Ada County (ID) commissioner districts (5).",
   "features": 3,
@@ -458,6 +478,16 @@
   "published": "2022",
   "source": "St. Mary Parish 2022 adopted plan (via AGL publisher J-Mann)",
   "source_url": "https://services5.arcgis.com/NaE1rjvJf3JdTAkI/arcgis/rest/services/StMary_SBDistricts_2022/FeatureServer"
+ },
+ "counties/md/montgomery/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Montgomery County (MD) school board (MCPS) electoral districts (5, BDED 1-5); 5-district structure verified on montgomeryschoolsmd.org board members page (2026).",
+  "features": 5,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "counties/md/montgomery/school_board_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Montgomery County MD GIS (official county elections layer)",
+  "source_url": "https://gis4.montgomerycountymd.gov/arcgis/rest/services/elections/board_of_ed/FeatureServer/0"
  },
  "counties/mn/dakota/county_commission_districts/county_commission_districts_2022.geojson": {
   "description": "Dakota County (MN) county commissioner districts (7, single-member, labeled 1-7; 2022 redistricting).",

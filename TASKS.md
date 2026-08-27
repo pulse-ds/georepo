@@ -194,7 +194,24 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (375 rows) + full verify.py run: **ALL GOOD**
       (375 files, 93,680 features).
 
-## Round 11+ (gap-filling & polish)
+## Round 11 (Montgomery MD + OKC + Gwinnett)
+- [x] **Montgomery County (MD) school board districts ADDED**: 5
+      BDEDs, official county elections layer; 5-district MCPS board
+      verified on montgomeryschoolsmd.org.
+- [x] **OKC city council wards ADDED**: 8 unlabeled polygons; structure
+      verified on Wikipedia ("OKC ward map effective 1 April 2022",
+      8 wards + 2 at-large).
+- [x] **Gwinnett County (GA) commission districts ADDED**: 4 labeled
+      districts; 5-member board = at-large chair + 4 district members
+      (Wikipedia). Gwinnett BOE layer REJECTED (6 polygons 0-5 vs
+      5-district GCPS board — unverified "0" district).
+- [x] Cook County retry #2: all 17 services WAF-400 again — deferred.
+- [x] WAF retries: Philly/KC/Austin/LV/Milwaukee still blocked; Aitkin
+      MN host times out.
+- [x] Catalog re-render (378 rows) + full verify.py run: **ALL GOOD**
+      (378 files, 93,697 features).
+
+## Round 12+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

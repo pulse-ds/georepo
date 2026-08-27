@@ -1472,7 +1472,7 @@
     "lines_last_redrawn": "current as of 2026",
     "expected": 8,
     "enabled": false,
-    "description": "DEFERRED (retry): persistent WAF 400 \u2014 cannot verify (8 council districts expected)."
+    "description": "DEFERRED (retry): persistent WAF 400 \u2014 cannot verify (8 council districts expected). Superseded by city_council_districts_2022 (same service, verified 2022 8-ward structure)."
   },
   {
     "id": "counties/co/el_paso/county_commission_districts_2025",
@@ -1488,5 +1488,77 @@
     "expected": 4,
     "enabled": false,
     "description": "DEFERRED (retry): only parcel data found on the county org \u2014 commissioner-district layer not located yet (WAF-blocked discovery)."
+  },
+  {
+    "id": "counties/md/montgomery/school_board_districts",
+    "locale": "counties/md/montgomery",
+    "geography_type": "school_board_districts",
+    "vintage": "2025",
+    "service": "https://gis4.montgomerycountymd.gov/arcgis/rest/services/elections/board_of_ed/FeatureServer",
+    "layer": 0,
+    "source": "Montgomery County MD GIS (official county elections layer)",
+    "source_url": "https://gis4.montgomerycountymd.gov/arcgis/rest/services/elections/board_of_ed/FeatureServer/0",
+    "published": "unknown",
+    "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+    "expected": 5,
+    "description": "Montgomery County (MD) school board (MCPS) electoral districts (5, BDED 1-5); 5-district structure verified on montgomeryschoolsmd.org board members page (2026)."
+  },
+  {
+    "id": "cities/ok/oklahoma_city/city_council_districts_2022",
+    "locale": "cities/ok/oklahoma_city",
+    "geography_type": "city_council_districts",
+    "vintage": "2022",
+    "service": "https://services7.arcgis.com/MZ4B5pzPtWwwXYaI/arcgis/rest/services/OKC_Council_Wards/FeatureServer",
+    "layer": 0,
+    "source": "OKC (official employee account)",
+    "source_url": "https://services7.arcgis.com/MZ4B5pzPtWwwXYaI/arcgis/rest/services/OKC_Council_Wards/FeatureServer",
+    "published": "2022",
+    "lines_last_redrawn": "2022 (Wikipedia: 'OKC ward map effective 1 April 2022'; 8-ward structure)",
+    "expected": 8,
+    "description": "Oklahoma City (OK) council wards (8, unlabeled \u2014 count matches the 8-ward structure; values absent from layer). 2 at-large members elected citywide."
+  },
+  {
+    "id": "counties/ga/gwinnett/county_commission_districts",
+    "locale": "counties/ga/gwinnett",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services3.arcgis.com/RfpmnkSAQleRbndX/arcgis/rest/services/Administrative/FeatureServer",
+    "layer": 2,
+    "source": "Gwinnett County GA GIS (official county org, Administrative service)",
+    "source_url": "https://services3.arcgis.com/RfpmnkSAQleRbndX/arcgis/rest/services/Administrative/FeatureServer/6",
+    "published": "unknown",
+    "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+    "expected": 4,
+    "description": "Gwinnett County (GA) commission districts (4, labeled 1-4); 5-member board = 1 at-large chair + 4 district members (Wikipedia, 2026)."
+  },
+  {
+    "id": "counties/ga/gwinnett/school_board_districts",
+    "locale": "counties/ga/gwinnett",
+    "geography_type": "school_board_districts",
+    "vintage": "2025",
+    "service": "https://services3.arcgis.com/RfpmnkSAQleRbndX/arcgis/rest/services/Administrative/FeatureServer",
+    "layer": 5,
+    "source": "Gwinnett County GA GIS (official county org, Administrative service)",
+    "source_url": "https://services3.arcgis.com/RfpmnkSAQleRbndX/arcgis/rest/services/Administrative/FeatureServer/5",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown",
+    "expected": 5,
+    "enabled": false,
+    "description": "REJECTED (unverified): 6 polygons labeled 0-5 vs the 5-district GCPS board \u2014 the '0' polygon's role unconfirmed (needs GCPS structure check before accepting)."
+  },
+  {
+    "id": "counties/nc/carteret/school_board_districts",
+    "locale": "counties/nc/carteret",
+    "geography_type": "school_board_districts",
+    "vintage": "2025",
+    "service": "https://arcgisweb.carteretcountync.gov/arcgis/rest/services/Layers/Board_of_Education_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Carteret County NC GIS (official)",
+    "source_url": "https://arcgisweb.carteretcountync.gov/arcgis/rest/services/Layers/Board_of_Education_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+    "expected": 6,
+    "enabled": false,
+    "description": "UNVERIFIED: 6 board districts (labeled 1-6); Carteret County school board size not yet confirmed \u2014 pending structure check."
   }
 ]

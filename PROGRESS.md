@@ -308,10 +308,39 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **375 GeoJSON files, 2.2 GB** (round 9: 373).
 - City council files: 34 (32 + Memphis singles & supers).
 
-## Next (round 11+)
-- Retry the WAF-400 school-board layers (Santa Cruz/Kern/Riverside/SB/SB-
-  county CA, Frederick MD, Tuscaloosa AL, Hillsborough FL); more AGL
-  mining (other LA 2022 plans, IL/CO/PA school board districts).
+## Round 11 (Montgomery MD school board + OKC + Gwinnett)
+- [x] **+3 files** (17 features; 378 total):
+  - `counties/md/montgomery/school_board_districts_2025.geojson` — 5
+    MCPS board districts (official Montgomery County MD GIS; structure
+    verified on montgomeryschoolsmd.org).
+  - `cities/ok/oklahoma_city/city_council_districts_2022.geojson` — 8
+    OKC council wards (unlabeled; 2022 structure verified on
+    Wikipedia).
+  - `counties/ga/gwinnett/county_commission_districts_2025.geojson` — 4
+    commission districts (official Gwinnett County GIS; 5-member board =
+    at-large chair + 4 districts).
+- [x] Gwinnett school-board layer rejected (6 polygons 0-5 vs 5-district
+  GCPS board — unverified "0" district).
+- [x] Cook County retry #2: all 17 services WAF-400 — deferred.
+- [x] WAF retries: Philly/KC/Austin/LV/Milwaukee still blocked; Aitkin
+  MN times out.
+- [x] Catalog re-render (378 rows) + full verify.py run: **ALL GOOD** —
+  378 files, 93,697 features, 0 geometry/catalog problems.
+
+## Round 11 running totals
+- **378 GeoJSON files, 2.2 GB** (round 10: 375).
+- School-board-district coverage now: 10 county files + 2 state SBOE.
+- City council files: 35; county commission files: 14.
+
+## Next (round 12+)
+- Cook County IL: retry #3 (17 manifest entries, 2015 boundaries).
+- Verify Gwinnett GCPS 5-vs-6-district question; verify Carteret NC
+  6-district board (both manifest entries ready).
+- Retry the WAF-400 layers (school board: Santa Cruz/Kern/Riverside/SB
+  CA, Frederick MD, Tuscaloosa AL, Hillsborough FL; cities: Philly 2024,
+  KC 2022, Austin, LV Council_Wards, Milwaukee, Aitkin MN); more AGL
+  mining (other LA 2022 plans, MD counties, IL/CO/PA school board
+  districts).
 - Per-district board-SEAT-COUNT CSVs (governance attribute) remain
   blocked on statute sources — see DEV.md; the district-geometry
   approach above is the practical path for "seats."
