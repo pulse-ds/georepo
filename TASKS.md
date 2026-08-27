@@ -354,7 +354,18 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (392 rows) + full verify.py run: **ALL GOOD**
       (392 files, 94,655 features).
 
-## Round 19+ (gap-filling & polish)
+## Round 19 (statewide IA school board districts)
+- [x] **+1 statewide file, 728 features** (393 total):
+  - `states/ia/school_board_districts_2025.geojson` — ALL Iowa
+    school board director districts (728; SchoolDistrict + DIST_NAME
+    fields, official state GIS — same publisher as the IA county file).
+    Covers every IA school district's electoral districts (community 9,
+    smaller 5).
+- [x] Cook County retry #7: in progress (results in round 20).
+- [x] Catalog re-render (393 rows) + full verify.py run: **ALL GOOD**
+      (393 files, 95,383 features).
+
+## Round 20+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

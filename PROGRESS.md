@@ -513,7 +513,22 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - School-board coverage: 20 files (incl. 2 state SBOE + 2 city school
   boards + 1 rural county set).
 
-## Next (round 19+)
+## Round 19 (statewide IA school board districts)
+- [x] **+1 file, 728 features** (393 total):
+  - `states/ia/school_board_districts_2025.geojson` — ALL Iowa school
+    board director districts (official state GIS; SchoolDistrict +
+    DIST_NAME attributes; community 9-district and smaller 5-district
+    boards).
+- [x] Cook County retry #7: in progress (all 6 prior attempts failed).
+- [x] Catalog re-render (393 rows) + full verify.py run: **ALL GOOD** —
+  393 files, 95,383 features, 0 geometry/catalog problems.
+
+## Round 19 running totals
+- **393 GeoJSON files, 2.2 GB** (round 18: 392).
+- School-board coverage: 21 files (incl. 2 state SBOE, 2 city boards,
+  1 statewide IA set).
+
+## Next (round 20+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
