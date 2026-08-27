@@ -469,13 +469,17 @@ Status legend: [ ] not started · [~] in progress · [x] done
   - `counties/ca/solano/county_commission_districts_2021.geojson` —
     5 supervisor districts (official KCI_DoITGIS, 2021 plan; 2001/2011
     baselines also in same service).
-- [x] CA county supervisor mining: Solano accepted; Mariposa REJECTED
-  (10 polygons = 5 labeled + 5 blank duplicates); Santa Clara 2021 +
-  LA County WAF-deferred; Contra Costa 404 (wrong layer index, official
-  authoritative service — retry with correct index).
+- [x] **+1 more file** (5 features; 402 total):
+  - `counties/ca/contra_costa/county_commission_districts_2025.geojson`
+    — 5 supervisor districts named per current supervisor (official
+    authoritative service, layer 21 BND_DCD_SupDist — the 404 from
+    round 27 was a wrong layer index, now fixed).
+- [x] CA county supervisor mining: Solano + Contra Costa accepted;
+  Mariposa REJECTED (10 polygons = 5 labeled + 5 blank duplicates);
+  Santa Clara 2021 + LA County WAF-deferred.
 - [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
-- [x] Catalog re-render (401 rows) + full verify.py run: **ALL GOOD**
-      (401 files, 95,427 features).
+- [x] Catalog re-render (402 rows) + full verify.py run: **ALL GOOD**
+      (402 files, 95,432 features).
 
 ## Round 28+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md

@@ -399,6 +399,16 @@
   "source": "Alameda County (official county org)",
   "source_url": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Board_of_Education_Districts/FeatureServer"
  },
+ "counties/ca/contra_costa/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Contra Costa County (CA) supervisor districts (5, named per current supervisor \u2014 unofficial naming; 5-supervisor board verified by extent + count).",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/ca/contra_costa/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Contra Costa County CA (official authoritative service, layer 21 BND_DCD_SupDist)",
+  "source_url": "https://gis.cccounty.us/arcgis/rest/services/_Authoritative/Board_of_Supervisor_Districts/MapServer/21"
+ },
  "counties/ca/inyo/school_board_districts/school_board_districts_2025.geojson": {
   "description": "Inyo County (CA) school board areas (5, Areas I-V); matches CA 5-trustee standard for districts under 100k enrollment (Inyo pop. ~19k); county BOE site unreachable \u2014 structure via statutory standard.",
   "features": 5,

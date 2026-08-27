@@ -638,9 +638,18 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - [x] Catalog re-render (401 rows) + full verify.py run: **ALL GOOD** —
   401 files, 95,427 features, 0 geometry/catalog problems.
 
+## Round 27b (Contra Costa fix)
+- [x] **+1 file** (5 features; 402 total):
+  - `counties/ca/contra_costa/county_commission_districts_2025.geojson`
+    — 5 supervisor districts named per current supervisor (official
+    authoritative service, layer 21 BND_DCD_SupDist; the 404 was a
+    wrong layer index).
+- [x] Catalog re-render (402 rows) + full verify.py run: **ALL GOOD** —
+  402 files, 95,432 features, 0 geometry/catalog problems.
+
 ## Round 27 running totals
-- **401 GeoJSON files, 2.2 GB** (round 26: 400).
-- County commission coverage: 26 county files + 2 statewide (MI/IA).
+- **402 GeoJSON files, 2.2 GB** (round 26: 400).
+- County commission coverage: 27 county files + 2 statewide (MI/IA).
 
 ## Next (round 28+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
