@@ -450,7 +450,21 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (399 rows) + full verify.py run: **ALL GOOD**
       (399 files, 95,417 features).
 
-## Round 26+ (gap-filling & polish)
+## Round 26 (Sonoma CA — 400 files)
+- [x] **+1 file** (5 features; 400 total — 400th file):
+  - `counties/ca/sonoma/county_commission_districts_2025.geojson` —
+    5 unlabeled supervisor districts (5-supervisor board verified by
+    extent + count; initially searched under 'SC' misnomer — extent =
+    Sonoma CA, not South Carolina).
+- [x] ND county commissioner layer WAF-deferred (potential statewide).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Riverside COE,
+      Tuscaloosa AL): all still blocked.
+- [x] DE/RI/CT/KY/WV/NM/ND/SD/VT county mining: no other new
+      reachable layers.
+- [x] Catalog re-render (400 rows) + full verify.py run: **ALL GOOD**
+      (400 files, 95,422 features).
+
+## Round 27+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

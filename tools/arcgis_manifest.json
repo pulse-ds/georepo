@@ -2200,5 +2200,34 @@
     "expected": 7,
     "enabled": false,
     "description": "REJECTED: 5 unlabeled polygons vs El Paso County TX's 7-commissioner board \u2014 stale/alternate map; prefer the official 7-district layer (WAF-blocked) when available."
+  },
+  {
+    "id": "states/nd/county_commission_districts",
+    "locale": "states/nd",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services6.arcgis.com/zbSH183Elt4hJ5Hl/arcgis/rest/services/Commissioner_Districts/FeatureServer",
+    "layer": 0,
+    "source": "ND (mchenry account, potential statewide)",
+    "source_url": "https://services6.arcgis.com/zbSH183Elt4hJ5Hl/arcgis/rest/services/Commissioner_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown",
+    "expected": 0,
+    "enabled": false,
+    "description": "DEFERRED (retry): WAF 400 \u2014 potential ND county commissioner districts (statewide or single-county, unconfirmed); needs verification of coverage + district counts."
+  },
+  {
+    "id": "counties/ca/sonoma/county_commission_districts",
+    "locale": "counties/ca/sonoma",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services1.arcgis.com/1vIhDJwtG5eNmiqX/arcgis/rest/services/Supervisor_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Sonoma County CA (oes_services account, 'Supervisor_Districts')",
+    "source_url": "https://services1.arcgis.com/1vIhDJwtG5eNmiqX/arcgis/rest/services/Supervisor_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 5,
+    "description": "Sonoma County (CA) supervisor districts (5 unlabeled; 5-supervisor board verified by extent + count; no labels in source). Initially searched under 'SC' (misnomer) \u2014 extent = Sonoma CA, not South Carolina."
   }
 ]

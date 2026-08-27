@@ -609,7 +609,24 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **399 GeoJSON files, 2.2 GB** (no net new files — deferral round).
 - County commission coverage: 24 county files + 2 statewide (MI/IA).
 
-## Next (round 26+)
+## Round 26 (Sonoma CA — 400 files)
+- [x] **+1 file** (5 features; 400 total — 400th file):
+  - `counties/ca/sonoma/county_commission_districts_2025.geojson` —
+    5 unlabeled supervisor districts (5-supervisor board verified by
+    extent + count).
+- [x] ND county commissioner layer WAF-deferred (potential statewide).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Riverside COE,
+      Tuscaloosa AL): all still blocked.
+- [x] DE/RI/CT/KY/WV/NM/ND/SD/VT county mining: no other new
+      reachable layers.
+- [x] Catalog re-render (400 rows) + full verify.py run: **ALL GOOD** —
+  400 files, 95,422 features, 0 geometry/catalog problems.
+
+## Round 26 running totals
+- **400 GeoJSON files, 2.2 GB** (milestone: 400th file).
+- County commission coverage: 25 county files + 2 statewide (MI/IA).
+
+## Next (round 27+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
