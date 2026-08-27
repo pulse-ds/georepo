@@ -419,6 +419,36 @@
   "source": "San Benito County CA GIS (official county org)",
   "source_url": "https://services2.arcgis.com/NjMFCzThTMQy3AJa/arcgis/rest/services/Board_of_Education/FeatureServer"
  },
+ "counties/co/adams/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Adams County (CO) commissioner districts (5, labeled 1-5; 5-commissioner board).",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/co/adams/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Adams County CO (official AdamsCO_GIS)",
+  "source_url": "https://services3.arcgis.com/4PNQOtAivErR7nbT/arcgis/rest/services/Commissioner_Districts/FeatureServer"
+ },
+ "counties/co/boulder/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Boulder County (CO) commissioner districts (3, named per current representative \u2014 unofficial naming; 3-commissioner board).",
+  "features": 3,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/co/boulder/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Boulder County CO (official BOCO POLITICAL service)",
+  "source_url": "https://maps.bouldercounty.org/arcgis/rest/services/POLITICAL/COMMISSIONERS_DISTRICTS/MapServer"
+ },
+ "counties/co/garfield/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Garfield County (CO) commissioner districts (3, named per current commissioner \u2014 unofficial naming; 3-commissioner board).",
+  "features": 3,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/co/garfield/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Garfield County CO (official county webmaps)",
+  "source_url": "https://maps.garfield-county.com/arcgis/rest/services/webmaps/comdist/MapServer"
+ },
  "counties/fl/collier/county_commission_districts/county_commission_districts_2019.geojson": {
   "description": "Collier County (FL) commissioner districts (5).",
   "features": 5,

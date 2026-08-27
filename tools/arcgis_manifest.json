@@ -2069,5 +2069,62 @@
     "lines_last_redrawn": "unknown (current map as of 2026)",
     "expected": 5,
     "description": "Putnam County (GA) board of education districts (5, DISTRICT 001-005; 5-district board). Identified by extent (lon -83.55..-83.14, lat 33.17..33.48 = Putnam GA, Eatonton area)."
+  },
+  {
+    "id": "counties/co/adams/county_commission_districts",
+    "locale": "counties/co/adams",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services3.arcgis.com/4PNQOtAivErR7nbT/arcgis/rest/services/Commissioner_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Adams County CO (official AdamsCO_GIS)",
+    "source_url": "https://services3.arcgis.com/4PNQOtAivErR7nbT/arcgis/rest/services/Commissioner_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 5,
+    "description": "Adams County (CO) commissioner districts (5, labeled 1-5; 5-commissioner board)."
+  },
+  {
+    "id": "counties/co/garfield/county_commission_districts",
+    "locale": "counties/co/garfield",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://maps.garfield-county.com/arcgis/rest/services/webmaps/comdist/MapServer",
+    "layer": 0,
+    "source": "Garfield County CO (official county webmaps)",
+    "source_url": "https://maps.garfield-county.com/arcgis/rest/services/webmaps/comdist/MapServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 3,
+    "description": "Garfield County (CO) commissioner districts (3, named per current commissioner \u2014 unofficial naming; 3-commissioner board)."
+  },
+  {
+    "id": "counties/co/boulder/county_commission_districts",
+    "locale": "counties/co/boulder",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://maps.bouldercounty.org/arcgis/rest/services/POLITICAL/COMMISSIONERS_DISTRICTS/MapServer",
+    "layer": 0,
+    "source": "Boulder County CO (official BOCO POLITICAL service)",
+    "source_url": "https://maps.bouldercounty.org/arcgis/rest/services/POLITICAL/COMMISSIONERS_DISTRICTS/MapServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 3,
+    "description": "Boulder County (CO) commissioner districts (3, named per current representative \u2014 unofficial naming; 3-commissioner board)."
+  },
+  {
+    "id": "counties/tx/elpaso/county_commission_districts",
+    "locale": "counties/tx/elpaso",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services3.arcgis.com/r1Gf4AJYRBIM0N25/arcgis/rest/services/Commissioner_Districts_Web_Map/FeatureServer",
+    "layer": 0,
+    "source": "El Paso County TX (evanokeefe_elpasoco county employee account)",
+    "source_url": "https://services3.arcgis.com/r1Gf4AJYRBIM0N25/arcgis/rest/services/Commissioner_Districts_Web_Map/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown",
+    "expected": 7,
+    "enabled": false,
+    "description": "DEFERRED (retry): WAF 400 \u2014 El Paso County TX (7-commissioner board, 7 districts expected)."
   }
 ]

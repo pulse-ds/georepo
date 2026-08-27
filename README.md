@@ -25,9 +25,9 @@ municipal) and then by geography type.
 | Counties (14) + Cities (2) + States (1) | School board electoral districts | done (pilot: FL/Lee, GA/Forsyth, GA/Chatham, LA×3, TN/Davidson, CA×5, MD/Montgomery, NC/Carteret, WA/Seattle, WA/Olympia, statewide IA (728 districts)) |
 | States (3) | State board of education electoral districts | done (TX SBOE 2021, KS SBOE, UT SBOE 2022-2032) |
 
-Current totals: **395 GeoJSON files, 2.2 GB** — all WGS84, all validated
+Current totals: **398 GeoJSON files, 2.2 GB** — all WGS84, all validated
 (see `CATALOG.csv`). Local-level coverage is a growing pilot: 35 city
-council files + 20 county commission files + 2 statewide
+council files + 23 county commission files + 2 statewide
 commissioner-districts files (MI + IA) + 22 school-board-district files
 (incl. 3 state SBOE — TX/KS/UT — 2 city boards, and the statewide IA
 school-board set), with a curated manifest of additional reachable

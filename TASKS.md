@@ -406,7 +406,23 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (395 rows) + full verify.py run: **ALL GOOD**
       (395 files, 95,403 features).
 
-## Round 23+ (gap-filling & polish)
+## Round 23 (CO counties: Adams/Garfield/Boulder)
+- [x] **+3 files** (11 features; 398 total):
+  - `counties/co/adams/county_commission_districts_2025.geojson` — 5
+    commissioner districts (official Adams County CO GIS).
+  - `counties/co/garfield/county_commission_districts_2025.geojson` —
+    3, named per commissioner (official Garfield County CO webmaps).
+  - `counties/co/boulder/county_commission_districts_2025.geojson` —
+    3, named per representative (official BOCO POLITICAL service).
+- [x] El Paso County TX (7-district board) WAF-deferred (new entry).
+- [x] WAF batch (IL SBOE, Riverside COE, SC RFA, Tuscaloosa AL): all
+      still blocked.
+- [x] GA/TN school board + CO/NM/LA county mining: no new reachable
+      layers.
+- [x] Catalog re-render (398 rows) + full verify.py run: **ALL GOOD**
+      (398 files, 95,414 features).
+
+## Round 24+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

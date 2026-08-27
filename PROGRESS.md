@@ -574,7 +574,26 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **395 GeoJSON files, 2.2 GB** (no net new files this round —
   refinement + verification round).
 
-## Next (round 23+)
+## Round 23 (CO counties: Adams + Garfield + Boulder)
+- [x] **+3 files** (11 features; 398 total):
+  - `counties/co/adams/county_commission_districts_2025.geojson` — 5
+    districts (official Adams County CO GIS).
+  - `counties/co/garfield/county_commission_districts_2025.geojson` —
+    3, per-commissioner named (official Garfield County CO maps).
+  - `counties/co/boulder/county_commission_districts_2025.geojson` —
+    3, per-representative named (official Boulder County CO).
+- [x] El Paso TX (7 commissioners expected) WAF-deferred.
+- [x] WAF retry (IL SBOE, Riverside COE, SC RFA, Tuscaloosa AL): all
+  still blocked.
+- [x] GA/TN/CO/NM/LA mining: no other new reachable layers.
+- [x] Catalog re-render (398 rows) + full verify.py run: **ALL GOOD** —
+  398 files, 95,414 features, 0 geometry/catalog problems.
+
+## Round 23 running totals
+- **398 GeoJSON files, 2.2 GB** (round 22: 395).
+- County commission coverage: 23 county files + 2 statewide (MI/IA).
+
+## Next (round 24+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
