@@ -21,16 +21,16 @@ municipal) and then by geography type.
 | States (56) | Municipal (incorporated place) boundaries | done (TIGER PLACE) |
 | States (56) | County subdivision boundaries | done (TIGER COUSUB) |
 | Cities (35) | City council districts | done (official city GIS / AGL) |
-| Counties (19) + States (2) | County commission / equivalent districts | done (pilot; many counties at-large; statewide MI (619) + IA (266) files cover all district-based counties in those states) |
-| Counties (14) | School board electoral districts | done (pilot: FL/Lee, GA/Forsyth, GA/Chatham, LA×3, TN/Davidson, CA×5, MD/Montgomery, NC/Carteret) |
+| Counties (20) + States (2) | County commission / equivalent districts | done (pilot; many counties at-large; statewide MI (619) + IA (266) files cover all district-based counties in those states) |
+| Counties (14) + Cities (1) | School board electoral districts | done (pilot: FL/Lee, GA/Forsyth, GA/Chatham, LA×3, TN/Davidson, CA×5, MD/Montgomery, NC/Carteret, WA/Seattle) |
 | States (2) | State board of education electoral districts | done (TX SBOE 2021, KS SBOE) |
 
-Current totals: **388 GeoJSON files, 2.2 GB** — all WGS84, all validated
+Current totals: **390 GeoJSON files, 2.2 GB** — all WGS84, all validated
 (see `CATALOG.csv`). Local-level coverage is a growing pilot: 35 city
-council files + 19 county commission files + 2 statewide
-commissioner-districts files (MI + IA) + 17 school-board-district files
-(incl. 2 state SBOE), with a curated manifest of additional reachable
-sources and a documented gap list (see DEV.md).
+council files + 20 county commission files + 2 statewide
+commissioner-districts files (MI + IA) + 18 school-board-district files
+(incl. 2 state SBOE + 1 city school board), with a curated manifest of
+additional reachable sources and a documented gap list (see DEV.md).
 
 ## Layout
 

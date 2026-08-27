@@ -319,7 +319,24 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (388 rows) + full verify.py run: **ALL GOOD**
       (388 files, 94,625 features).
 
-## Round 17+ (gap-filling & polish)
+## Round 17 (Seattle + Waseca + Puyallup)
+- [x] **+3 files** (17 features; 390 total):
+  - `cities/wa/seattle/school_board_districts_2025.geojson` — 7
+    director districts (official King County WA GIS; 7-director
+    Seattle School District structure verified).
+  - `counties/mn/waseca/county_commission_districts_2025.geojson` — 5
+    commissioner districts D1-D5 (identified by extent: Waseca County
+    MN; 5-commissioner board).
+  - Puyallup School District No. 3 (WA): 5 per-position director
+    districts (WAF-400, DEFERRED — retry; positions 1,3,5 layers named).
+- [x] WAF-deferred (new): Washington Parish LA 2022 school board,
+  WashCo "School Board and Constable Districts" (county unconfirmed).
+- [x] Cook County retry #6: in progress at commit time (all 5 prior
+    attempts fully WAF-failed).
+- [x] Catalog re-render (390 rows) + full verify.py run: **ALL GOOD**
+      (390 files, 94,637 features).
+
+## Round 18+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

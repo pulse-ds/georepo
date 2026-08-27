@@ -472,7 +472,27 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - County commission coverage: 19 county files + 2 statewide files
   (MI 619 + IA 266).
 
-## Next (round 17+)
+## Round 17 (Seattle + Waseca)
+- [x] **+2 files** (12 features; 390 total):
+  - `cities/wa/seattle/school_board_districts_2025.geojson` — 7
+    director districts (official King County WA GIS, DIRDST_AREA_406;
+    7-director structure verified).
+  - `counties/mn/waseca/county_commission_districts_2025.geojson` — 5
+    commissioner districts D1-D5 (identified by extent as Waseca County
+    MN; 5-commissioner board).
+- [x] WAF-deferred (new): Puyallup SD No. 3 (WA) per-position director
+  districts (5 positions), Washington Parish LA 2022 school board,
+  WashCo school-board/constable combined layer (county unconfirmed).
+- [x] Cook County retry #6: in progress (all 5 prior attempts failed).
+- [x] Catalog re-render (390 rows) + full verify.py run: **ALL GOOD** —
+  390 files, 94,637 features, 0 geometry/catalog problems.
+
+## Round 17 running totals
+- **390 GeoJSON files, 2.2 GB** (round 16: 388).
+- School-board coverage: 18 files (incl. 2 state SBOE + Seattle city
+  board); county commission: 20 county files + 2 statewide.
+
+## Next (round 18+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
