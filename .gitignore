@@ -1,0 +1,17 @@
+# Data files (2.2 GB of GeoJSON) — NOT tracked in git.
+# See DEV.md "Version control policy" for how to distribute/restore them
+# (re-run the tools, or use Git LFS once a remote is available).
+data/
+
+# Python venv (recreate: python3 -m venv .tools/venv && .tools/venv/bin/pip install pyshp)
+.tools/venv/
+
+# keep the catalog source of truth
+!.tools/catalog.json
+
+# Download/conversion cache
+.tools/cache/
+
+# Python bytecode
+__pycache__/
+*.pyc
