@@ -231,7 +231,30 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (380 rows) + full verify.py run: **ALL GOOD**
       (380 files, 93,707 features).
 
-## Round 13+ (gap-filling & polish)
+## Round 13 (Carteret NC + county board mining)
+- [x] **Carteret County (NC) school board districts ADDED**: 6 labeled
+      districts, official county GIS; NC statute sets board size by
+      enrollment (~9 members) — per-district seat allocation documented
+      as unverified.
+- [x] Ada County (ID): already in the repo (2019 vintage, 3 named
+      districts) — re-fetched/confirmed; manifest description corrected
+      (3, not 5).
+- [x] County board mining: Wilson OR rejected (7 polygons vs 3-member
+      board), Eaton MI rejected (15 unlabeled vs 3-commissioner board);
+      DeSoto FL + Cherokee GA deferred (WAF 400); Kitsap WA stays
+      rejected (3 unnamed vs 4 current districts).
+- [x] Gwinnett GCPS + Carteret structure checks: GCPS still
+      unresolvable (JS-only site, no Wikipedia count) — stays rejected;
+      Carteret resolved as above.
+- [x] WAF retry batch (Philly/KC/Nevada CA/Napa CA/Santa Cruz/Kern/
+      Frederick MD/Tuscaloosa AL): all still blocked (4th consecutive
+      round) — stable.
+- [x] Cook County retry #4: in progress at commit time (all prior
+      attempts fully WAF-failed).
+- [x] Catalog re-render (381 rows) + full verify.py run: **ALL GOOD**
+      (381 files, 93,713 features).
+
+## Round 14+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

@@ -354,7 +354,33 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **380 GeoJSON files, 2.2 GB** (round 11: 378).
 - School-board-district files: 14 county + 2 state SBOE = 16.
 
-## Next (round 13+)
+## Round 13 (Ada ID + Carteret NC)
+- [x] **+2 files** (9 features; 381 total):
+  - `counties/id/ada/county_commission_districts_2025.geojson` — 3
+    commissioner districts named per commissioner (official Ada County
+    ID GIS; 3/3 structure since 2018).
+  - `counties/nc/carteret/school_board_districts_2025.geojson` — 6
+    board electoral districts (official Carteret County NC GIS;
+    per-district seat allocation unverified, noted).
+- [x] County board sweep (GA/FL/OR/ID/WA/MI): Ada + (Kitsap kept
+  disabled: 3 unnamed vs 4 districts) accepted; Wilson OR (7 vs 3),
+  Eaton MI (15 vs 3), Glynn GA (7 vs 5), Hillsborough FL (4 vs 5)
+  rejected; DeKalb GA + Collier FL WAF-deferred.
+- [x] Gwinnett GCPS check: no authoritative 5-vs-6 source found
+  (article silent, site JS-only) — stays rejected-pending.
+- [x] WAF retry batch: 4th consecutive full failure (Philly/KC/Austin/
+  LV/Milwaukee/Aitkin + CA school boards + Frederick MD + Tuscaloosa
+  AL) — all stable blocks.
+- [x] Cook County retry #4: in progress (results in round 14).
+- [x] Catalog re-render (381 rows) + full verify.py run: **ALL GOOD** —
+  381 files, 93,713 features, 0 geometry/catalog problems.
+
+## Round 13 running totals
+- **381 GeoJSON files, 2.2 GB** (round 12: 380).
+- County commission files: 15; school-board-district files: 15 county
+  + 2 state SBOE = 17.
+
+## Next (round 14+)
 - Cook County IL: retry #4 (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district, Gwinnett GCPS (5-vs-6), Carteret NC (6-district check).

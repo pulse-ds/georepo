@@ -574,7 +574,7 @@
     "published": "unknown",
     "lines_last_redrawn": "2019",
     "expected": 3,
-    "description": "Ada County (ID) commissioner districts (5)."
+    "description": "Ada County (ID) commissioner districts (3, single-member, named per current commissioner \u2014 3-commissioner/3-district structure since 2018 redistricting)."
   },
   {
     "id": "counties/nc/wake/county_commission_districts",
@@ -1558,8 +1558,8 @@
     "published": "unknown",
     "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
     "expected": 6,
-    "enabled": false,
-    "description": "UNVERIFIED: 6 board districts (labeled 1-6); Carteret County school board size not yet confirmed \u2014 pending structure check."
+    "enabled": true,
+    "description": "Carteret County (NC) school board electoral districts (6, labeled 1-6; official county GIS). NC statute sets board size by enrollment (~9 members expected); per-district seat allocation unverified."
   },
   {
     "id": "counties/ca/inyo/school_board_districts",
@@ -1618,5 +1618,50 @@
     "expected": 7,
     "enabled": false,
     "description": "DEFERRED (retry): host times out \u2014 cannot verify (Napa County CA, 7 trustee areas expected for a ~100k district)."
+  },
+  {
+    "id": "counties/or/wilson/county_commission_districts",
+    "locale": "counties/or/wilson",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://gis.wilson-co.com/arcgis/rest/services/Voting/County_Commissioner_Districts/MapServer",
+    "layer": 0,
+    "source": "Wilson County OR GIS (official)",
+    "source_url": "https://gis.wilson-co.com/arcgis/rest/services/Voting/County_Commissioner_Districts/MapServer/0",
+    "published": "unknown",
+    "lines_last_redrawn": "current map as of 2026",
+    "expected": 3,
+    "enabled": false,
+    "description": "REJECTED: 7 polygons (D1-D7) vs Wilson County's 3-commissioner board \u2014 structure mismatch (may be old or wrong layer)."
+  },
+  {
+    "id": "counties/mi/eaton/county_commission_districts",
+    "locale": "counties/mi/eaton",
+    "geography_type": "county_commission_districts",
+    "vintage": "2021",
+    "service": "https://services2.arcgis.com/c9l1e4fKpsCnqD7H/arcgis/rest/services/Enriched_Enriched_Eaton_County_Commissioner_Districts_2021/FeatureServer",
+    "layer": 0,
+    "source": "Eaton County MI GIS (official)",
+    "source_url": "https://services2.arcgis.com/c9l1e4fKpsCnqD7H/arcgis/rest/services/Enriched_Enriched_Eaton_County_Commissioner_Districts_2021/FeatureServer",
+    "published": "2021",
+    "lines_last_redrawn": "2021 (per title)",
+    "expected": 3,
+    "enabled": false,
+    "description": "REJECTED: 15 unlabeled polygons vs 3-commissioner board \u2014 not the district map."
+  },
+  {
+    "id": "counties/fl/desoto/county_commission_districts",
+    "locale": "counties/fl/desoto",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services3.arcgis.com/4x1ttl3OlaXJtuj6/arcgis/rest/services/Desoto_County_Florida_Commissioner_Districts/FeatureServer",
+    "layer": 0,
+    "source": "DeSoto County FL (employee account)",
+    "source_url": "https://services3.arcgis.com/4x1ttl3OlaXJtuj6/arcgis/rest/services/Desoto_County_Florida_Commissioner_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown",
+    "expected": 5,
+    "enabled": false,
+    "description": "DEFERRED (retry): WAF 400 \u2014 cannot verify (5 districts expected)."
   }
 ]

@@ -529,6 +529,16 @@
   "source": "Scott County MN GIS (official county org)",
   "source_url": "https://services.arcgis.com/DqIh9WAsIZcPlBEF/arcgis/rest/services/Commissioner_Districts/FeatureServer"
  },
+ "counties/nc/carteret/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Carteret County (NC) school board electoral districts (6, labeled 1-6; official county GIS). NC statute sets board size by enrollment (~9 members expected); per-district seat allocation unverified.",
+  "features": 6,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "counties/nc/carteret/school_board_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Carteret County NC GIS (official)",
+  "source_url": "https://arcgisweb.carteretcountync.gov/arcgis/rest/services/Layers/Board_of_Education_Districts/FeatureServer"
+ },
  "counties/nc/mecklenburg/county_commission_districts/county_commission_districts_2022.geojson": {
   "description": "Mecklenburg County (NC) board of commissioners \u2014 5 district polygons (named per commissioner) + 1 at-large countywide polygon = 6 commissioners.",
   "features": 6,
