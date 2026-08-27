@@ -419,6 +419,16 @@
   "source": "San Benito County CA GIS (official county org)",
   "source_url": "https://services2.arcgis.com/NjMFCzThTMQy3AJa/arcgis/rest/services/Board_of_Education/FeatureServer"
  },
+ "counties/ca/solano/county_commission_districts/county_commission_districts_2021.geojson": {
+  "description": "Solano County (CA) supervisor districts (5, labeled 1-5; 5-supervisor board verified).",
+  "features": 5,
+  "filename": "county_commission_districts_2021.geojson",
+  "folder": "counties/ca/solano/county_commission_districts",
+  "lines_last_redrawn": "2021 (per layer name; 2001 + 2011 baselines also in same service)",
+  "published": "2021",
+  "source": "Solano County CA (official KCI_DoITGIS, 'BOS_District_Boundaries_2021_SolanoCounty')",
+  "source_url": "https://services2.arcgis.com/SCn6czzcqKAFwdGU/arcgis/rest/services/BOS_District_Boundaries_2021/FeatureServer"
+ },
  "counties/ca/sonoma/county_commission_districts/county_commission_districts_2025.geojson": {
   "description": "Sonoma County (CA) supervisor districts (5 unlabeled; 5-supervisor board verified by extent + count; no labels in source). Initially searched under 'SC' (misnomer) \u2014 extent = Sonoma CA, not South Carolina.",
   "features": 5,

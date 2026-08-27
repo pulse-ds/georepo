@@ -626,7 +626,23 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **400 GeoJSON files, 2.2 GB** (milestone: 400th file).
 - County commission coverage: 25 county files + 2 statewide (MI/IA).
 
-## Next (round 27+)
+## Round 27 (CA: Solano)
+- [x] **+1 file** (5 features; 401 total):
+  - `counties/ca/solano/county_commission_districts_2021.geojson` —
+    5 supervisor districts (official, 2021 plan).
+- [x] Mariposa CA REJECTED (10 polygons = 5 labeled + 5 blank
+  duplicates); Santa Clara 2021 + LA County WAF-deferred; Contra Costa
+  404 (wrong layer index — official authoritative service, retry with
+  correct index).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (401 rows) + full verify.py run: **ALL GOOD** —
+  401 files, 95,427 features, 0 geometry/catalog problems.
+
+## Round 27 running totals
+- **401 GeoJSON files, 2.2 GB** (round 26: 400).
+- County commission coverage: 26 county files + 2 statewide (MI/IA).
+
+## Next (round 28+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
