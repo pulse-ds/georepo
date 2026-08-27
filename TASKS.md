@@ -80,7 +80,26 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Full-repo verify.py run: ALL GOOD (356 files, 93,539 features, 0
       catalog/geometry problems).
 
-## Round 5+ (gap-filling & polish)
+## Round 5 (local expansion + git policy)
+- [x] +4 city council files (official/verified): Raleigh NC (5 districts
+      A-E, official RaleighGIS — host now reachable), San Francisco CA (11
+      supervisor districts, SF.gov org), Fairfield CA (6 per-member
+      polygons, official), Tacoma WA (5 unlabeled, council=5 members).
+- [x] School board seats FL pilot attempt: bracket rules live in FL
+      statutes but every reachable FL statute host is JS-rendered (no
+      static text) and no readable bracket source found — pilot stays
+      deferred per the DEV.md plan.
+- [x] El Paso County CO retry #3: service still returns no JSON; disabled.
+- [x] Gap-city probes: Tampa (only stale 2000 council map on
+      arcgis.tampagov.net — rejected), Louisville/Cincinnati/OKC/LV
+      (no usable AGL layers), Santa Clara County + Milwaukee (service
+      400s, retry later). NH 400-district house: not on AGL (only 2012
+      maps + base blocks) — stays stale.
+- [x] Git: `git init` (branch main), .gitignore (data/, venv, cache),
+      first commit (docs + tools + catalog); LFS policy documented.
+- [~] Catalog re-render (360 rows) + full verify.py run (background).
+
+## Round 6+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
@@ -91,7 +110,8 @@ Status legend: [ ] not started · [~] in progress · [x] done
       legislative; confirm any 2025-26 mid-decade special cases).
 - [ ] Consider per-state congressional district files under states/<ab>/ for
       convenience (decision: default no — see DEV.md).
-- [ ] Git init + size policy (data is 2.2 GB; consider Git LFS or
-      simplified GENZ variants for the biggest files).
+- [ ] Git LFS adoption once a remote exists (data/ currently untracked —
+      see DEV.md "Version control policy").
 - [ ] Local-level: more district-based county boards (SC/NC/MN/FL), gap
-      cities (Detroit, NOLA, Philly, KC, Memphis, LA, ...).
+      cities (Detroit, NOLA, Philly, KC, Memphis, LA, Austin, ...), retry
+      Milwaukee + Santa Clara County (WAF 400s).
