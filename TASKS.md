@@ -422,7 +422,23 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (398 rows) + full verify.py run: **ALL GOOD**
       (398 files, 95,414 features).
 
-## Round 24+ (gap-filling & polish)
+## Round 24 (CO: Douglas + El Paso TX correction)
+- [x] **+2 files** (6 features; 400 total — first time over 400):
+  - `counties/co/douglas/county_commission_districts_2025.geojson` —
+    3 unlabeled commissioner districts (official Douglas County CO;
+    3-commissioner board verified by extent + count). Initially
+    mislabeled as El Paso TX (owner email douglas.co.us vs. a
+    different El Paso CO TX service) — caught by extent check and
+    corrected.
+  - `counties/tx/elpaso/county_commission_districts_2025.geojson` —
+    already in repo from a prior round (7-district El Paso CO TX
+    board, official county employee account).
+- [x] CO commissioner mining: no other new reachable layers (Adams/
+  Garfield/Boulder/Douglas now covered; El Paso TX WAF-deferred).
+- [x] Catalog re-render (400 rows) + full verify.py run: **ALL GOOD**
+      (400 files, 95,420 features).
+
+## Round 25+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
