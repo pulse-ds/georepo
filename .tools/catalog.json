@@ -3469,6 +3469,16 @@
   "source": "U.S. Census Bureau TIGER/Line",
   "source_url": "https://www2.census.gov/geo/tiger/TIGER2025/UNSD/tl_2025_49_unsd.zip"
  },
+ "states/ut/state_board_of_education_districts/state_board_of_education_districts_2022.geojson": {
+  "description": "Utah State Board of Education electoral districts (15, DIST 1-15; 2022-2032 plan). A Millcreek-hosted copy of the same layer was WAF-blocked \u2014 this UtahAGRC official URL worked.",
+  "features": 15,
+  "filename": "state_board_of_education_districts_2022.geojson",
+  "folder": "states/ut/state_board_of_education_districts",
+  "lines_last_redrawn": "2022 (effective 2022-2032 per layer name)",
+  "published": "2022",
+  "source": "Utah AGRC (official state org, 'UtahSchoolBoardDistricts2022to2032')",
+  "source_url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahSchoolBoardDistricts2022to2032/FeatureServer"
+ },
  "states/ut/state_house_districts/state_house_districts_2025.geojson": {
   "description": "Utah: State house of representatives districts, TIGER SLDL (lower chamber). 75 districts.",
   "features": 75,

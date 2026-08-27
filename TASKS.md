@@ -365,7 +365,18 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (393 rows) + full verify.py run: **ALL GOOD**
       (393 files, 95,383 features).
 
-## Round 20+ (gap-filling & polish)
+## Round 20 (UT SBOE — 3rd state SBOE)
+- [x] **+1 file** (15 features; 394 total):
+  - `states/ut/state_board_of_education_districts_2022.geojson` — 15
+    UT State Board of Education electoral districts (2022-2032 plan;
+    official Utah AGRC URL — the Millcreek-hosted copy stayed WAF-400).
+- [x] SC RFA statewide school board layer WAF-deferred (new manifest
+      entry; coverage/district counts unverified).
+- [x] Cook County retry #7: all 17 WAF-400 — 7th straight full failure.
+- [x] Catalog re-render (394 rows) + full verify.py run: **ALL GOOD**
+      (394 files, 95,398 features).
+
+## Round 21+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

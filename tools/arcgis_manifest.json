@@ -2011,5 +2011,49 @@
     "lines_last_redrawn": "unknown (current map as of 2026)",
     "expected": 728,
     "description": "ALL Iowa school director districts (728, DIST_NAME D1-D9) \u2014 one file covering every IA school district's board-electoral districts (community districts 9, smaller 5). District-to-school mapping not encoded (geometry only); companion county file uses the same state org."
+  },
+  {
+    "id": "states/sc/school_board_districts",
+    "locale": "states/sc",
+    "geography_type": "school_board_districts",
+    "vintage": "2025",
+    "service": "https://services9.arcgis.com/RvqSyw3diI7dTKo5/arcgis/rest/services/SC_School_Board_Districts/FeatureServer",
+    "layer": 0,
+    "source": "SC RFA (School Boards of SC, hosted by York County SC GIS)",
+    "source_url": "https://services9.arcgis.com/RvqSyw3diI7dTKo5/arcgis/rest/services/SC_School_Board_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown",
+    "expected": 0,
+    "enabled": false,
+    "description": "DEFERRED (retry): WAF 400 \u2014 potential statewide SC school board districts layer (RFA = School Boards of South Carolina); needs verification of coverage and district counts before acceptance."
+  },
+  {
+    "id": "states/ut/state_board_of_education_districts",
+    "locale": "states/ut",
+    "geography_type": "state_board_of_education_districts",
+    "vintage": "2022",
+    "service": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahSchoolBoardDistricts2022to2032/FeatureServer",
+    "layer": 0,
+    "source": "Utah AGRC (official state org, 'UtahSchoolBoardDistricts2022to2032')",
+    "source_url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahSchoolBoardDistricts2022to2032/FeatureServer",
+    "published": "2022",
+    "lines_last_redrawn": "2022 (effective 2022-2032 per layer name)",
+    "expected": 15,
+    "description": "Utah State Board of Education electoral districts (15, DIST 1-15; 2022-2032 plan). A Millcreek-hosted copy of the same layer was WAF-blocked \u2014 this UtahAGRC official URL worked."
+  },
+  {
+    "id": "states/al/state_board_of_education_districts",
+    "locale": "states/al",
+    "geography_type": "state_board_of_education_districts",
+    "vintage": "2021",
+    "service": "https://services7.arcgis.com/33Tmvrm3G2UZLFK9/arcgis/rest/services/2021_Alabama_State_Board_of_Education_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Alabama (ESRI government redistricting account)",
+    "source_url": "https://services7.arcgis.com/33Tmvrm3G2UZLFK9/arcgis/rest/services/2021_Alabama_State_Board_of_Education_Districts/FeatureServer",
+    "published": "2021",
+    "lines_last_redrawn": "2021 adopted plan",
+    "expected": 15,
+    "enabled": false,
+    "description": "DEFERRED (retry): WAF 400 \u2014 2021 AL SBOE districts (15 expected per AL 2021 redistricting cycle); cannot verify structure yet."
   }
 ]

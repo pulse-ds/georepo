@@ -528,7 +528,21 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - School-board coverage: 21 files (incl. 2 state SBOE, 2 city boards,
   1 statewide IA set).
 
-## Next (round 20+)
+## Round 20 (UT SBOE)
+- [x] **+1 file** (15 features; 394 total):
+  - `states/ut/state_board_of_education_districts_2022.geojson` — 15
+    UT SBOE electoral districts (2022-2032 plan; official Utah AGRC
+    URL; the Millcreek copy stayed WAF-400).
+- [x] SC RFA statewide school board layer WAF-deferred (new entry).
+- [x] Cook County retry #7: 7th straight full failure.
+- [x] Catalog re-render (394 rows) + full verify.py run: **ALL GOOD** —
+  394 files, 95,398 features, 0 geometry/catalog problems.
+
+## Round 20 running totals
+- **394 GeoJSON files, 2.2 GB** (round 19: 393).
+- State SBOE coverage: 3 states (TX 2021, KS, UT 2022-32).
+
+## Next (round 21+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
