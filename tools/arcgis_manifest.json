@@ -1854,5 +1854,47 @@
     "expected": 231,
     "enabled": false,
     "description": "REJECTED: 231 polygons with only CO_FIPS (no district labels) \u2014 cannot verify structure or assign district values; OK's district-based counties (Cleveland/Oklahoma/Tulsa) would total ~9 districts, so the 231 count suggests fragments of another scheme."
+  },
+  {
+    "id": "counties/va/fairfax/county_commission_districts",
+    "locale": "counties/va/fairfax",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Supervisor_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Fairfax County VA (FX.AuthData official county account)",
+    "source_url": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Supervisor_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+    "expected": 9,
+    "description": "Fairfax County (VA) board of supervisors districts (9, named per district \u2014 Mason, Sully, Braddock, Mount Vernon, Franconia, Springfield, Dranesville, Providence, Hunter Mill; one supervisor per district, verified 9-district structure)."
+  },
+  {
+    "id": "counties/nc/buncombe/county_commission_districts",
+    "locale": "counties/nc/buncombe",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://gis.buncombecounty.org/arcgis/rest/services/opendata/FeatureServer",
+    "layer": 6,
+    "source": "Buncombe County NC GIS (official county open data)",
+    "source_url": "https://gis.buncombecounty.org/arcgis/rest/services/opendata/FeatureServer/6",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 3,
+    "description": "Buncombe County (NC) commissioner districts (3, labeled 1-3; 3-commissioner board)."
+  },
+  {
+    "id": "counties/nc/cherokee/county_commission_districts",
+    "locale": "counties/nc/cherokee",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services5.arcgis.com/UmQCfTNQbyTzAV5N/arcgis/rest/services/Commissioners_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Cherokee County NC (tslovin GIS account, county publisher)",
+    "source_url": "https://services5.arcgis.com/UmQCfTNQbyTzAV5N/arcgis/rest/services/Commissioners_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 5,
+    "description": "Cherokee County (NC) commissioner districts (5 unlabeled polygons; 5-commissioner structure verified by count; no labels in source)."
   }
 ]

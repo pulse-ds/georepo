@@ -549,6 +549,16 @@
   "source": "Scott County MN GIS (official county org)",
   "source_url": "https://services.arcgis.com/DqIh9WAsIZcPlBEF/arcgis/rest/services/Commissioner_Districts/FeatureServer"
  },
+ "counties/nc/buncombe/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Buncombe County (NC) commissioner districts (3, labeled 1-3; 3-commissioner board).",
+  "features": 3,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/nc/buncombe/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Buncombe County NC GIS (official county open data)",
+  "source_url": "https://gis.buncombecounty.org/arcgis/rest/services/opendata/FeatureServer/6"
+ },
  "counties/nc/carteret/school_board_districts/school_board_districts_2025.geojson": {
   "description": "Carteret County (NC) school board electoral districts (6, labeled 1-6; official county GIS). NC statute sets board size by enrollment (~9 members expected); per-district seat allocation unverified.",
   "features": 6,
@@ -558,6 +568,16 @@
   "published": "unknown",
   "source": "Carteret County NC GIS (official)",
   "source_url": "https://arcgisweb.carteretcountync.gov/arcgis/rest/services/Layers/Board_of_Education_Districts/FeatureServer"
+ },
+ "counties/nc/cherokee/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Cherokee County (NC) commissioner districts (5 unlabeled polygons; 5-commissioner structure verified by count; no labels in source).",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/nc/cherokee/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Cherokee County NC (tslovin GIS account, county publisher)",
+  "source_url": "https://services5.arcgis.com/UmQCfTNQbyTzAV5N/arcgis/rest/services/Commissioners_Districts/FeatureServer"
  },
  "counties/nc/mecklenburg/county_commission_districts/county_commission_districts_2022.geojson": {
   "description": "Mecklenburg County (NC) board of commissioners \u2014 5 district polygons (named per commissioner) + 1 at-large countywide polygon = 6 commissioners.",
@@ -628,6 +648,16 @@
   "published": "unknown",
   "source": "Harris County, TX (Houston) GIS (official)",
   "source_url": "https://services.arcgis.com/su8ic9KbA7PYVxPS/arcgis/rest/services/Commissioner_Precincts/FeatureServer"
+ },
+ "counties/va/fairfax/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Fairfax County (VA) board of supervisors districts (9, named per district \u2014 Mason, Sully, Braddock, Mount Vernon, Franconia, Springfield, Dranesville, Providence, Hunter Mill; one supervisor per district, verified 9-district structure).",
+  "features": 9,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/va/fairfax/county_commission_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Fairfax County VA (FX.AuthData official county account)",
+  "source_url": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Supervisor_Districts/FeatureServer"
  },
  "states/ak/county_subdivisions/county_subdivisions_2025.geojson": {
   "description": "Alaska: county subdivisions (civil townships, towns, municipalities) boundaries (TIGER COUSUB). Context layer \u2014 does NOT include council or commission district lines. 37 features.",

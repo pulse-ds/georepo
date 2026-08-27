@@ -301,7 +301,25 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (385 rows) + full verify.py run: **ALL GOOD**
       (385 files, 94,608 features).
 
-## Round 16+ (gap-filling & polish)
+## Round 16 (NC/VA counties)
+- [x] **+3 files** (17 features; 388 total):
+  - `counties/va/fairfax/county_commission_districts_2025.geojson` —
+    9 supervisor districts named per district (Mason, Sully, Braddock,
+    Mount Vernon, Franconia, Springfield, Dranesville, Providence,
+    Hunter Mill) — verified extent + 9-supervisor structure.
+  - `counties/nc/buncombe/county_commission_districts_2025.geojson` —
+    3 commissioner districts (official Buncombe County GIS).
+  - `counties/nc/cherokee/county_commission_districts_2025.geojson` —
+    5 unlabeled polygons (5-commissioner structure verified by count).
+- [x] Wake County NC stays disabled: 7 polygons include 2 former
+      commissioners (stale pre-redistricting map; current board = 5).
+- [x] Cook County retry #5: all 17 services WAF-400 — 5th straight
+      full failure; stays deferred.
+- [x] WAF retry (UT SBOE): still blocked.
+- [x] Catalog re-render (388 rows) + full verify.py run: **ALL GOOD**
+      (388 files, 94,625 features).
+
+## Round 17+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

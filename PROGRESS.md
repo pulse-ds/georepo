@@ -450,7 +450,29 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - County commission coverage: 17 county files + 2 statewide files
   (MI 619 + IA 266 = 885 districts).
 
-## Next (round 16+)
+## Round 16 (NC/VA counties)
+- [x] **+3 files** (17 features; 388 total):
+  - `counties/va/fairfax/county_commission_districts_2025.geojson` —
+    9 supervisor districts named per district (Mason, Sully, Braddock,
+    Mount Vernon, Franconia, Springfield, Dranesville, Providence,
+    Hunter Mill) — 9-supervisor structure verified (extent + names).
+  - `counties/nc/buncombe/county_commission_districts_2025.geojson` —
+    3 commissioner districts (official Buncombe County GIS).
+  - `counties/nc/cherokee/county_commission_districts_2025.geojson` —
+    5 unlabeled polygons (5-commissioner structure verified by count).
+- [x] Wake County NC stays disabled (7 polygons incl. 2 former
+  commissioners — stale; current 5-commissioner board).
+- [x] Cook County retry #5: all 17 WAF-400 — 5th straight full failure.
+- [x] WAF retry (UT SBOE): still blocked.
+- [x] Catalog re-render (388 rows) + full verify.py run: **ALL GOOD** —
+  388 files, 94,625 features, 0 geometry/catalog problems.
+
+## Round 16 running totals
+- **388 GeoJSON files, 2.2 GB** (round 15: 385).
+- County commission coverage: 19 county files + 2 statewide files
+  (MI 619 + IA 266).
+
+## Next (round 17+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
