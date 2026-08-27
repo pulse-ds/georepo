@@ -380,12 +380,59 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - County commission files: 15; school-board-district files: 15 county
   + 2 state SBOE = 17.
 
-## Next (round 14+)
-- Cook County IL: retry #4 (17 manifest entries, 2015 boundaries).
+## Round 14 (statewide MI county commission districts)
+- [x] **+1 file, 619 features** (382 total):
+  - `states/mi/county_commission_districts_2021.geojson` — ALL
+    Michigan county commissioner districts (619, DistrictName labeled),
+    official state open-data layer. Covers every MI county with
+    district-based boards in one file; 2021 vintage caveat documented
+    (suburban 2022-24 redistricting rounds may post-date it).
+- [x] County mining: Oakland MI WAF-deferred; Eaton MI 2nd layer
+  rejected (15 special-district polygons vs 3-commissioner board);
+  GarbanzoBridge93 619-polygon copy rejected (anonymous, unlabeled —
+  prefer official state service); Maricopa AZ 2023- + Milwaukee Co WI
+  17-district + Manitowoc WI WAF-deferred.
+- [x] WAF retry batch (DeKalb GA, Collier FL, MD 2022): all still
+  blocked (5th consecutive round).
+- [x] Cook County retry #4: still running at commit (all prior attempts
+  fully WAF-failed).
+- [x] Catalog re-render (382 rows) + full verify.py run: **ALL GOOD** —
+  382 files, 94,332 features, 0 geometry/catalog problems.
+
+## Round 14 running totals
+- **382 GeoJSON files, 2.2 GB** (round 13: 381).
+- County commission coverage: 16 files (15 county + 1 statewide MI),
+  684 commissioner districts total.
+
+## Round 14 (statewide MI)
+- [x] **+1 file** (619 features; 382 total):
+  - `states/mi/county_commission_districts_2021.geojson` — ALL
+    Michigan county commissioner districts (619, DistrictName labeled;
+    official State of Michigan GIS open data; covers every MI county
+    with a district-based board in one file; per-county vintage
+    caveat: some suburbs redistricted 2022-24).
+- [x] Rejections: Eaton MI "District 1-15" layer (special/assessment
+  areas, not the 3-commissioner board); unlabeled 619-polygon copy of
+  the state MI layer (anonymous AGL account).
+- [x] WAF-deferred (new, all 400s): Maricopa AZ 2023- supervisors (5),
+  Milwaukee Co WI (17), Manitowoc WI (5), Oakland MI, DeKalb GA,
+  Collier FL, MD 2022 (4th/5th consecutive full WAF round).
+- [x] Cook County retry #4: all 17 services WAF-400 — 4th straight
+  full failure; stays deferred.
+- [x] Catalog re-render (382 rows) + full verify.py run: **ALL GOOD** —
+  382 files, 94,332 features, 0 geometry/catalog problems.
+
+## Round 14 running totals
+- **382 GeoJSON files, 2.2 GB** (round 13: 381).
+- County commission coverage: 15 county files + 1 statewide MI file.
+
+## Next (round 15+)
+- Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
-  HS district, Gwinnett GCPS (5-vs-6), Carteret NC (6-district check).
-- Verify Gwinnett GCPS 5-vs-6-district question; verify Carteret NC
-  6-district board (both manifest entries ready).
+  HS district. Gwinnett GCPS stays rejected-pending (no source found).
+  Carteret NC resolved (accepted, seat allocation noted).
+- New WAF deferrals to retry: DeKalb GA, Collier FL, Oakland MI,
+  Maricopa AZ 2023-, Milwaukee Co WI, Manitowoc WI.
 - Retry the WAF-400 layers (school board: Santa Cruz/Kern/Riverside/SB
   CA, Frederick MD, Tuscaloosa AL, Hillsborough FL; cities: Philly 2024,
   KC 2022, Austin, LV Council_Wards, Milwaukee, Aitkin MN); more AGL

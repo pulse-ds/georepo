@@ -254,7 +254,35 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (381 rows) + full verify.py run: **ALL GOOD**
       (381 files, 93,713 features).
 
-## Round 14+ (gap-filling & polish)
+## Round 14 (statewide MI county districts)
+- [x] **+1 statewide file, 619 features** (382 total): ALL Michigan
+      county commissioner districts (official state layer, 2021
+      vintage; suburban 2022-24 redistricting caveat documented).
+- [x] County mining: Maricopa AZ (official 2023-), Milwaukee Co WI
+      (17), Manitowoc WI, Oakland MI WAF-deferred; Eaton MI 2nd layer
+      rejected (15 special districts); anonymous 619-copy rejected.
+- [x] WAF retry batch (DeKalb GA, Collier FL, MD 2022): all still
+      blocked (5th consecutive round).
+- [x] Catalog re-render (382 rows) + full verify.py run: **ALL GOOD**
+      (382 files, 94,332 features).
+
+## Round 14 (statewide MI + WAF sweeps)
+- [x] **State of Michigan GIS "2021 County Commissioner Districts"
+      ADDED**: 619 labeled districts — one file covering every MI
+      county with a district-based board (official state open data;
+      per-county vintage caveat: some suburbs redistricted 2022-24).
+- [x] Rejections: Eaton MI "District 1-15" (special/assessment areas,
+      not the 3-commissioner board), unlabeled 619-polygon copy of the
+      state MI layer (anonymous account).
+- [x] WAF-deferred (new): Maricopa AZ 2023 supervisors, Milwaukee Co
+      WI, Manitowoc WI, Oakland MI, DeKalb GA, Collier FL — all 400s
+      (5th consecutive full WAF round).
+- [x] Cook County retry #4: all 17 services WAF-400 again — 4th
+      straight full failure; stays deferred.
+- [x] Catalog re-render (382 rows) + full verify.py run: **ALL GOOD**
+      (382 files, 94,332 features).
+
+## Round 15+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
