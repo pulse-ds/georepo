@@ -226,9 +226,10 @@ Status legend: [ ] not started · [~] in progress · [x] done
   — items stay pending-verification in the manifest.
 - [x] WAF retry batch (Philly/KC/Austin/LV/Milwaukee/Aitkin): all
       still blocked (3rd consecutive round) — stable.
-- [x] Cook County retry #3: in progress at catalog time (results
-      below).
-- [~] Catalog re-render + full verify.py run: results below.
+- [x] Cook County retry #3: all 17 services WAF-400 again — still
+      deferred (3rd full failure).
+- [x] Catalog re-render (380 rows) + full verify.py run: **ALL GOOD**
+      (380 files, 93,707 features).
 
 ## Round 13+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
