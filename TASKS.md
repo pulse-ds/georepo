@@ -167,7 +167,34 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (373 rows) + full verify.py run: **ALL GOOD**
       (373 files, 93,671 features).
 
-## Round 10+ (gap-filling & polish)
+## Round 10 (Memphis fix + Cook County + gap cities)
+- [x] **Memphis CORRECTED & fetched**: my round-9 rejection was wrong —
+      Memphis = 13 council members from 9 districts (7 single-member +
+      2 three-seat "super districts"), verified on Wikipedia. Fetched
+      both layers: 7 singles (CD 1-7) + 2 supers (SD 8-9) → +2 files.
+- [x] **Cook County IL**: 17 commissioner districts found as 17
+      separate official county services (2015 boundaries, pre-2020
+      redistricting — vintage caveat) — but the org is WAF-locked
+      (400s on all 17 services, including ones that answered minutes
+      earlier) → **deferred**; all 17 manifest entries ready for a
+      retry round.
+- [x] MD retry #3: mdplanning org still WAF-locked except the two
+      47-senate layers (which TIGER already covers). MD stays flagged
+      (incomplete 71/93 TIGER house).
+- [x] Gap cities: Tampa official layer = only 4 of 9 districts
+      (rejected); NOLA candidates = 5-district A-E maps of another city
+      (rejected ×2); LV CLV_WARDS = 91 neighborhoods (rejected),
+      Council_Wards variant WAF-deferred; OKC Council_Wards WAF-deferred;
+      Austin (JAllan308) WAF-deferred; Louisville/San Jose: nothing on
+      AGL. El Paso CO: no commissioner-district layer found (5 at-large
+      commissioners → N/A, gap closed).
+- [x] SC "School_Board_Districts" (401 features) = school DISTRICT
+      boundaries (ActName attrs), not board electoral districts →
+      rejected as duplicate of TIGER ELSD.
+- [x] Catalog re-render (375 rows) + full verify.py run: **ALL GOOD**
+      (375 files, 93,680 features).
+
+## Round 11+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

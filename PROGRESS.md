@@ -281,17 +281,46 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **373 GeoJSON files, 2.2 GB** (round 8: 370).
 - County commission files: 13 (10 + Dakota MN, Scott MN, Coweta GA).
 
-## Next (round 10+)
+## Round 10 (Memphis correction + Cook County + gap cities)
+- [x] **Memphis (TN) added** — corrected a round-9 misjudgment:
+  Memphis = 13 council members from **9 districts** (7 single-member +
+  2 three-seat super districts), verified on Wikipedia. Fetched both
+  official 2023 layers: 7 singles + 2 supers → +2 files.
+- [x] **Cook County (IL)**: 17 commissioner districts exist as 17
+  separate official county services (2015 boundaries — pre-2020
+  redistricting) but the org is WAF-locked → all 17 manifest entries
+  recorded as deferred; retry round needed.
+- [x] Gap cities: Tampa official layer incomplete (4 of 9 districts,
+  rejected); NOLA "NOLA" candidates = 5-district A-E maps of another
+  city (rejected ×2); LV CLV_WARDS = 91 neighborhoods (rejected); OKC +
+  Austin + LV Council_Wards WAF-deferred; Louisville/San Jose: nothing
+  on AGL. El Paso CO: 5 at-large commissioners → no district file
+  needed (gap closed).
+- [x] MD retry #3: mdplanning org still WAF-locked (only the 47-senate
+  layers answer, which TIGER already covers) — stays flagged.
+- [x] SC "School_Board_Districts" (401 features) = school district
+  boundaries, not board electoral districts → rejected as TIGER
+  duplicate.
+- [x] Catalog re-render (375 rows) + full verify.py run: **ALL GOOD** —
+  375 files, 93,680 features, 0 geometry/catalog problems.
+
+## Round 10 running totals
+- **375 GeoJSON files, 2.2 GB** (round 9: 373).
+- City council files: 34 (32 + Memphis singles & supers).
+
+## Next (round 11+)
 - Retry the WAF-400 school-board layers (Santa Cruz/Kern/Riverside/SB/SB-
   county CA, Frederick MD, Tuscaloosa AL, Hillsborough FL); more AGL
   mining (other LA 2022 plans, IL/CO/PA school board districts).
 - Per-district board-SEAT-COUNT CSVs (governance attribute) remain
   blocked on statute sources — see DEV.md; the district-geometry
   approach above is the practical path for "seats."
-- Local-level gap-filling: New Orleans, Tampa, Milwaukee, Louisville,
-  Cincinnati, OKC, San Jose, LV; retries (WAF-deferred): Philly 2024, KC
-  2022, Memphis DBO, Aitkin MN, El Paso CO. More county coverage (SC/NC/
-  IL district-based boards; FL beyond Lee/Collier).
+- Local-level gap-filling: New Orleans, Louisville, Cincinnati (no AGL
+  hits yet; NOLA official GIS WAF-blocked); Cook County IL retry (17
+  manifest entries, 2015 boundaries); retries (WAF-deferred): Philly 2024,
+  KC 2022, OKC, Austin, LV Council_Wards, Aitkin MN, Milwaukee. El Paso
+  CO = at-large (no districts needed — gap closed). More county coverage
+  (SC/NC district-based boards; FL beyond Lee/Collier).
 - MD replacement: retry mdplanning AGL org when the WAF eases
   (`MD_Legislative_Districts_2022`, 105/51 plan effective 2026); the
   71/93-district TIGER house file is flagged incomplete in the catalog.

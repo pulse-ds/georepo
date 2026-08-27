@@ -290,6 +290,22 @@ stable since; verify per county). City files use the map year.
 6. Landlock sandbox gives partial enforcement here; temp files go under
    `/tmp` and the workspace. Keep scratch in `/tmp`, durable artifacts in the
    repo.
+7. **Council "seats" ≠ council "districts"** (Memphis lesson, round 10):
+   Memphis has 13 council members but only 9 electoral districts (7
+   single-member + 2 three-seat super-districts). Always verify the
+   seat-vs-district structure (Wikipedia council article) before rejecting a
+   layer on feature-count grounds; the "expected" count in the manifest is
+   the DISTRICT count, not the member count.
+8. **One-service-per-district pattern** (Cook County IL, round 10): some
+   counties expose each commission district as its OWN ArcGIS service
+   (`..._District_N`, 1 polygon each). To combine, fetch all N and merge the
+   geometries into one FeatureCollection with a synthetic DISTRICT attribute.
+   Cook County (17 services, 2015 boundaries) is recorded in the manifest,
+   deferred — the org is WAF-locked.
+9. **WAF 400s can flip per request** (round 10): a service that answered a
+   count query one minute later can 400 for an entire fetch attempt. Treat
+   400s as retryable-later (a few hours), not permanent, and never commit
+   partial merges of a multi-service source.
 
 ## Conventions
 

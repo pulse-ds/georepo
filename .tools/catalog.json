@@ -229,6 +229,26 @@
   "source": "Metro Regional Government, Oregon (official RLIS)",
   "source_url": "https://services2.arcgis.com/McQ0OlIABe29rJJy/arcgis/rest/services/Metro_Council_Districts/FeatureServer"
  },
+ "cities/tn/memphis/city_council_districts/city_council_districts_2022.geojson": {
+  "description": "Memphis (TN) single-member council districts (7, labeled CD 1-7; 2023 plan). Council = 13 members: 7 single-district + 6 from two 3-seat super-districts (see city_council_super_districts file). Structure verified on Wikipedia 'Memphis City Council' (2026).",
+  "features": 7,
+  "filename": "city_council_districts_2022.geojson",
+  "folder": "cities/tn/memphis/city_council_districts",
+  "lines_last_redrawn": "2022",
+  "published": "2022 (file labeled 2023)",
+  "source": "City of Memphis (official)",
+  "source_url": "https://services2.arcgis.com/saWmpKJIUAjyyNVc/arcgis/rest/services/Council_Districts_2023/FeatureServer"
+ },
+ "cities/tn/memphis/city_council_districts/city_council_districts_2023.geojson": {
+  "description": "Memphis (TN) super-districts (2, labeled SD 8-9, 3 council members each). Pairs with the 7 single-member district file; structure verified on Wikipedia 'Memphis City Council' (2026).",
+  "features": 2,
+  "filename": "city_council_districts_2023.geojson",
+  "folder": "cities/tn/memphis/city_council_districts",
+  "lines_last_redrawn": "2023 (per layer title)",
+  "published": "2023",
+  "source": "Memphis eGIS (opmautomation_memegis official city account)",
+  "source_url": "https://services2.arcgis.com/saWmpKJIUAjyyNVc/arcgis/rest/services/Super_District_2023/FeatureServer"
+ },
  "cities/tn/nashville/city_council_districts/city_council_districts_2011.geojson": {
   "description": "Nashville city council districts (15) - 2011 map (STALE; 2022 redistricting not reflected in this source).",
   "features": 35,
