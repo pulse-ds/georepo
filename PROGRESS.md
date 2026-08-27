@@ -593,7 +593,23 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **398 GeoJSON files, 2.2 GB** (round 22: 395).
 - County commission coverage: 23 county files + 2 statewide (MI/IA).
 
-## Next (round 24+)
+## Round 25 (deferral/mining round)
+- [x] **No new files** (399 total):
+  - Isanti MN: stays rejected (5 unlabeled vs 3 at-large board — prior
+    analysis confirmed).
+  - El Paso TX CSCono variant: REJECTED (5 unlabeled vs 7-commissioner
+    board — stale/alternate map).
+- [x] WAF-deferred (new): Maine statewide 2024 county commissioners
+  (official state, 16 counties), Grant County WA (5), Fort Pierce FL
+  city commission (7).
+- [x] Catalog re-render (399 rows) + full verify.py run: **ALL GOOD** —
+  399 files, 95,417 features, 0 geometry/catalog problems.
+
+## Round 25 running totals
+- **399 GeoJSON files, 2.2 GB** (no net new files — deferral round).
+- County commission coverage: 24 county files + 2 statewide (MI/IA).
+
+## Next (round 26+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

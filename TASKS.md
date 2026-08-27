@@ -438,7 +438,19 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (400 rows) + full verify.py run: **ALL GOOD**
       (400 files, 95,420 features).
 
-## Round 25+ (gap-filling & polish)
+## Round 25 (ME/Grant/FtPierce deferrals)
+- [x] **No new files** (399 total) — mining/deferral round:
+  - Isanti MN: stays rejected (5 unlabeled polygons vs 3 at-large
+    board — prior analysis confirmed).
+  - El Paso TX CSCono variant: REJECTED (5 unlabeled vs 7-commissioner
+    board — stale/alternate map).
+- [x] WAF-deferred (new): Maine statewide 2024 county commissioners
+    (official state, 16 counties), Grant County WA (5), Fort Pierce FL
+    city commission (7).
+- [x] Catalog re-render (399 rows) + full verify.py run: **ALL GOOD**
+      (399 files, 95,417 features).
+
+## Round 26+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
