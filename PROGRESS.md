@@ -215,11 +215,44 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - Local level: 32 city council + 10 county commission + 4 school board
   district files; +1 state SBOE electoral-district file.
 
-## Next (round 8+)
-- More school-board-district layers: retry Hillsborough FL, mine the
-  AGL `school board district` results further (LA parishes with 2022
-  adopted plans, other FL/GA/NC counties, IL/CO), verify St. John the
-  Baptist Parish structure.
+## Round 8 (school board districts wave 2)
+- [x] **5 more school-board files** (39 features; 370 total files):
+  - `states/ks/state_board_of_education_districts_2025.geojson` — 10 KS
+    SBOE electoral districts (official KansasGIS; 10-seat structure
+    verified via Wikipedia).
+  - `counties/ca/alameda/school_board_districts_2025.geojson` — 7 trustee
+    areas 1st–7th (official Alameda County).
+  - `counties/la/st_james/school_board_districts_2022.geojson` — 7, 2022
+    adopted plan (verified on stjames.k12.la.us).
+  - `counties/tn/davidson/school_board_districts_2022.geojson` — 9,
+    "2022 School Board Districts" (official Nashville Open Data; 9-district
+    board verified via Wikipedia).
+  - `counties/ga/chatham/school_board_districts_2025.geojson` — 8
+    Savannah-Chatham districts, per-member named (SAGIS official; 8-district
+    board verified on sccpss.com).
+- [x] Deferred to manifest (WAF 400, retry later): Santa Cruz, Kern,
+  Riverside, San Bernardino, Santa Barbara (CA), Frederick (MD),
+  Tuscaloosa (AL), Hillsborough (FL). Rejected: Orange CA OCDE (45
+  polygons ≠ 12 trustees — not trustee areas), CCGIS2025 anonymous
+  6-polygon WNC layer (unverifiable provenance).
+- [x] Tooling: `fetch_arcgis.py` now URL-encodes service paths
+  (parens in layer names); fixed a double-encode regression.
+- [x] St. John the Baptist Parish structure still unverified (2010
+  baseline WAF-blocked; parish sites unreachable) — caveat stands.
+- [x] El Paso CO retry #5: still no JSON.
+- [x] Catalog re-render (370 rows) + full verify.py run: **ALL GOOD** —
+  370 files, 93,654 features, 0 geometry/catalog problems.
+
+## Round 8 running totals
+- **370 GeoJSON files, 2.2 GB** (round 7: 365).
+- School-board-district coverage now: 9 files (FL/Lee, GA/Forsyth,
+  GA/Chatham, LA/St. Mary, LA/St. James, LA/St. John the Baptist,
+  TN/Davidson, CA/Alameda + TX & KS state SBOE).
+
+## Next (round 9+)
+- Retry the WAF-400 school-board layers (Santa Cruz/Kern/Riverside/SB/SB-
+  county CA, Frederick MD, Tuscaloosa AL, Hillsborough FL); more AGL
+  mining (other LA 2022 plans, IL/CO/PA school board districts).
 - Per-district board-SEAT-COUNT CSVs (governance attribute) remain
   blocked on statute sources — see DEV.md; the district-geometry
   approach above is the practical path for "seats."

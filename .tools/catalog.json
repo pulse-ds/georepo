@@ -319,6 +319,16 @@
   "source": "IT Data Curator (ArcGIS org copy of Tacoma council map)",
   "source_url": "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/City_Council_Districts/FeatureServer"
  },
+ "counties/ca/alameda/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Alameda County (CA) Board of Education trustee areas (7, single-member, labeled 1st-7th).",
+  "features": 7,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "counties/ca/alameda/school_board_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Alameda County (official county org)",
+  "source_url": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Board_of_Education_Districts/FeatureServer"
+ },
  "counties/fl/collier/county_commission_districts/county_commission_districts_2019.geojson": {
   "description": "Collier County (FL) commissioner districts (5).",
   "features": 5,
@@ -349,6 +359,16 @@
   "source": "Lee County FL GIS (official)",
   "source_url": "https://services2.arcgis.com/LvWGAAhHwbCJ2GMP/arcgis/rest/services/SchoolBoardDistricts/FeatureServer"
  },
+ "counties/ga/chatham/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Savannah-Chatham County (GA) public school system board districts (8, single-member); polygons named per board member (unofficial naming; 2 of 8 names match current board snapshot).",
+  "features": 8,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "counties/ga/chatham/school_board_districts",
+  "lines_last_redrawn": "current map as of 2026 (8-district board verified on sccpss.com, 2026)",
+  "published": "unknown",
+  "source": "SAGIS / Sunrise Association of Governments (official GA regional GIS)",
+  "source_url": "https://pub.sagis.org/arcgis/rest/services/OpenData/Boundaries/MapServer/9"
+ },
  "counties/ga/cherokee/county_commission_districts/county_commission_districts_2019.geojson": {
   "description": "Cherokee County (GA) commissioners' districts (5).",
   "features": 5,
@@ -378,6 +398,16 @@
   "published": "unknown",
   "source": "Ada County, ID (Boise) GIS (official)",
   "source_url": "https://services2.arcgis.com/dgGjZc6xAH5m5JyP/arcgis/rest/services/Commissioner_District/FeatureServer"
+ },
+ "counties/la/st_james/school_board_districts/school_board_districts_2022.geojson": {
+  "description": "St. James Parish (LA) school board districts (7); 2022 adopted plan; 7-district board verified on stjames.k12.la.us members page (2026).",
+  "features": 7,
+  "filename": "school_board_districts_2022.geojson",
+  "folder": "counties/la/st_james/school_board_districts",
+  "lines_last_redrawn": "2022 adopted plan",
+  "published": "2022",
+  "source": "St. James Parish 2022 adopted plan (via AGL publisher J-Mann)",
+  "source_url": "https://services5.arcgis.com/NaE1rjvJf3JdTAkI/arcgis/rest/services/StJames_SBDistricts_2022/FeatureServer"
  },
  "counties/la/st_john_the_baptist/school_board_districts/school_board_districts_2022.geojson": {
   "description": "St. John the Baptist Parish (LA) school board districts (11); 2022 adopted plan. Board structure NOT independently verified (parish/district sites unreachable); same publisher as verified St. Mary plan.",
@@ -428,6 +458,16 @@
   "published": "unknown",
   "source": "Sumter County, SC (official GIS account)",
   "source_url": "https://services8.arcgis.com/FTrtUCmxaVKdPC5e/arcgis/rest/services/BOCC_Commission_Districts/FeatureServer"
+ },
+ "counties/tn/davidson/school_board_districts/school_board_districts_2022.geojson": {
+  "description": "Metro Nashville / Davidson County (TN) school board districts (9, single-member, labeled 1-9; 9-district board verified via Wikipedia). Layer: '2022 School Board Districts'.",
+  "features": 9,
+  "filename": "school_board_districts_2022.geojson",
+  "folder": "counties/tn/davidson/school_board_districts",
+  "lines_last_redrawn": "2022 (2022 School Board Districts layer)",
+  "published": "2022",
+  "source": "Nashville Open Data (official Metro Nashville GIS)",
+  "source_url": "https://services2.arcgis.com/HdTo6HJqh92wn4D8/arcgis/rest/services/School_Board_Districts_(Current)/FeatureServer"
  },
  "counties/tx/bexar/county_commission_districts/county_commission_districts_2005.geojson": {
   "description": "Bexar County (TX) commissioner precincts (4).",
@@ -1428,6 +1468,16 @@
   "published": "2025 (TIGER 2025 release)",
   "source": "U.S. Census Bureau TIGER/Line",
   "source_url": "https://www2.census.gov/geo/tiger/TIGER2025/UNSD/tl_2025_20_unsd.zip"
+ },
+ "states/ks/state_board_of_education_districts/state_board_of_education_districts_2025.geojson": {
+  "description": "Kansas State Board of Education electoral districts (10, single-member; 10-seat structure verified via Wikipedia). Unlabeled polygons.",
+  "features": 10,
+  "filename": "state_board_of_education_districts_2025.geojson",
+  "folder": "states/ks/state_board_of_education_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Kansas GIS (KansasGIS, official state org)",
+  "source_url": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/State_Board_of_Education_Districts/FeatureServer"
  },
  "states/ks/state_house_districts/state_house_districts_2025.geojson": {
   "description": "Kansas: State house of representatives districts, TIGER SLDL (lower chamber). 125 districts.",

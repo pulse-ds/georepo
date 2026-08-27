@@ -66,6 +66,14 @@ def get(url, timeout=60, retries=3):
     raise last
 
 
+def norm_service(base):
+    """URL-encode special chars (e.g. parens) in the service path."""
+    p = urllib.parse.urlsplit(base)
+    return urllib.parse.urlunsplit(
+        (p.scheme, p.netloc, urllib.parse.quote(p.path, safe="/"), p.query, p.fragment)
+    ).rstrip("/")
+
+
 def layer_meta(base, layer=0):
     d = json.loads(get(f"{base.rstrip('/')}/{layer}?f=json", timeout=25))
     if "error" in d:
@@ -75,6 +83,7 @@ def layer_meta(base, layer=0):
 
 def fetch_layer_geojson(base, layer=0):
     """Fetch a full layer as a GeoJSON FeatureCollection (paginated)."""
+    base = norm_service(base)
     meta = layer_meta(base, layer)
     max_records = meta.get("maxRecordCount") or 2000
     feats = []

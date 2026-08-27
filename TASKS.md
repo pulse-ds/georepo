@@ -124,7 +124,25 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] DEV.md: board-structure verification methods that work + SBOE-on-
       county-org discovery trick.
 
-## Round 8+ (gap-filling & polish)
+## Round 8 (school board districts, batch 2)
+- [x] +5 school-board-district files (41 features): KS SBOE statewide
+      (10, official KansasGIS), Alameda CA (7 trustee areas, official),
+      LA/St. James (7, 2022 adopted plan, verified on stjames.k12.la.us),
+      TN/Davidson "Nashville" (9, 2022 districts, official Nashville Open
+      Data, verified via Wikipedia), GA/Chatham "Savannah-Chatham" (8,
+      SAGIS, verified on sccpss.com).
+- [x] +1 reject: CCGIS2025 (anonymous AGL account, 6 unlabeled NC
+      polygons); 8 more deferred as WAF-400 (Santa Cruz/Kern/Riverside/
+      San Bernardino CA, Frederick MD, Santa Maria Vista CA, Tuscaloosa
+      AL, Hillsborough FL) — all kept in manifest as disabled.
+- [x] fetch_arcgis.py fix: URL-encode special chars in service paths
+      (Nashville service name has parens; double-encoding bug caught and
+      fixed).
+- [x] El Paso CO retry #5: still dead (no JSON).
+- [x] Catalog re-render (370 rows) + full verify.py run: **ALL GOOD**
+      (370 files, 93,654 features).
+
+## Round 9+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
