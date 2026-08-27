@@ -282,7 +282,26 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (382 rows) + full verify.py run: **ALL GOOD**
       (382 files, 94,332 features).
 
-## Round 15+ (gap-filling & polish)
+## Round 15 (statewide IA + AZ counties)
+- [x] **+3 files** (276 features; 385 total):
+  - `states/ia/county_commission_districts_2025.geojson` — ALL Iowa
+    county supervisor districts (266, named "<County> Supervisor
+    District N"; official state GIS).
+  - `counties/az/coconino/county_commission_districts_2025.geojson` —
+    5 supervisor districts (official Coconino County GIS, "2025").
+  - `counties/az/pima/county_commission_districts_2025.geojson` — 5,
+    per-supervisor named (official Tucson/Pima GIS PCBOS layer).
+- [x] Rejections: St. Charles Parish LA 2022 (8 blank polygons vs
+    9-district board), OK statewide OKDOT layer (231 unlabeled
+    fragments, structure unverifiable).
+- [x] WAF retry batch (Maricopa/Milwaukee Co/Manitowoc/Oakland/DeKalb/
+    Collier/Grant WA/Philly/KC): all still blocked (6th consecutive
+    round).
+- [x] Cook County retry #5: in progress at commit time.
+- [x] Catalog re-render (385 rows) + full verify.py run: **ALL GOOD**
+      (385 files, 94,608 features).
+
+## Round 16+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

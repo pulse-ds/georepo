@@ -349,6 +349,26 @@
   "source": "IT Data Curator (ArcGIS org copy of Tacoma council map)",
   "source_url": "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/City_Council_Districts/FeatureServer"
  },
+ "counties/az/coconino/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Coconino County (AZ) supervisor districts (5, labeled 1-5; 5-supervisor/5-district structure).",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/az/coconino/county_commission_districts",
+  "lines_last_redrawn": "2025 (per layer title)",
+  "published": "2025",
+  "source": "Coconino County AZ (official county GIS, 'County Supervisor Districts 2025')",
+  "source_url": "https://services1.arcgis.com/Rlvx5g8pKeK13apH/arcgis/rest/services/Adopted_Districts/FeatureServer"
+ },
+ "counties/az/pima/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Pima County (AZ) supervisor districts (5, named per current supervisor \u2014 unofficial naming; 5-supervisor/5-district structure).",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/az/pima/county_commission_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Tucson/Pima County AZ GIS (official, PCBOS layer)",
+  "source_url": "https://mapdata.tucsonaz.gov/arcgis/rest/services/IT/ZoomTucson/MapServer/12"
+ },
  "counties/ca/alameda/school_board_districts/school_board_districts_2025.geojson": {
   "description": "Alameda County (CA) Board of Education trustee areas (7, single-member, labeled 1st-7th).",
   "features": 7,
@@ -1328,6 +1348,16 @@
   "published": "2025 (TIGER 2025 release)",
   "source": "U.S. Census Bureau TIGER/Line",
   "source_url": "https://www2.census.gov/geo/tiger/TIGER2025/SLDU/tl_2025_15_sldu.zip"
+ },
+ "states/ia/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "All Iowa county supervisor districts (266, NAME = '<County> Supervisor District N') \u2014 one file covering every IA county with district-based boards (most 3-district counties; smaller counties at-large by definition excluded).",
+  "features": 266,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "states/ia/county_commission_districts",
+  "lines_last_redrawn": "current map as of 2026 (per-county vintage unverified; most IA districts last redrawn 2020-22)",
+  "published": "unknown",
+  "source": "State of Iowa (official state GIS, 'CountySupervisorDistricts')",
+  "source_url": "https://services.arcgis.com/vPD5PVLI6sfkZ5E4/arcgis/rest/services/CountySupervisorDistricts/FeatureServer"
  },
  "states/ia/county_subdivisions/county_subdivisions_2025.geojson": {
   "description": "Iowa: county subdivisions (civil townships, towns, municipalities) boundaries (TIGER COUSUB). Context layer \u2014 does NOT include council or commission district lines. 1663 features.",

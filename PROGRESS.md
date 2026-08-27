@@ -426,7 +426,31 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **382 GeoJSON files, 2.2 GB** (round 13: 381).
 - County commission coverage: 15 county files + 1 statewide MI file.
 
-## Next (round 15+)
+## Round 15 (statewide IA + AZ counties)
+- [x] **+3 files** (276 features; 385 total):
+  - `states/ia/county_commission_districts_2025.geojson` — ALL Iowa
+    county supervisor districts (266, "<County> Supervisor District N"
+    labeled; official state GIS).
+  - `counties/az/coconino/county_commission_districts_2025.geojson` —
+    5 supervisor districts (official Coconino County GIS, 2025 title).
+  - `counties/az/pima/county_commission_districts_2025.geojson` — 5,
+    per-supervisor named (official Tucson/Pima GIS).
+- [x] Rejections: St. Charles Parish LA 2022 (8 blank vs 9-district
+  board), OK statewide OKDOT 231-polygon layer (unlabeled,
+  structure unverifiable).
+- [x] WAF retry batch: 6th consecutive full failure (Maricopa AZ,
+  Milwaukee Co WI, Manitowoc WI, Oakland MI, DeKalb GA, Collier FL,
+  Grant WA, Philly, KC).
+- [x] Cook County retry #5: in progress (results in round 16).
+- [x] Catalog re-render (385 rows) + full verify.py run: **ALL GOOD** —
+  385 files, 94,608 features, 0 geometry/catalog problems.
+
+## Round 15 running totals
+- **385 GeoJSON files, 2.2 GB** (round 14: 382).
+- County commission coverage: 17 county files + 2 statewide files
+  (MI 619 + IA 266 = 885 districts).
+
+## Next (round 16+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
