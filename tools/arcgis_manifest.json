@@ -1542,9 +1542,9 @@
     "source_url": "https://services3.arcgis.com/RfpmnkSAQleRbndX/arcgis/rest/services/Administrative/FeatureServer/5",
     "published": "unknown",
     "lines_last_redrawn": "unknown",
-    "expected": 5,
+    "expected": 6,
     "enabled": false,
-    "description": "REJECTED (unverified): 6 polygons labeled 0-5 vs the 5-district GCPS board \u2014 the '0' polygon's role unconfirmed (needs GCPS structure check before accepting)."
+    "description": "Gwinnett County (GA) GCPS board of education districts (6 polygons BOE_DISTRICT 0-5; districts 1-5 are 118-310 km2, polygon \"0\" is a 6.9 km2 fragment \u2014 cannot determine if it is a genuine 6th district or a redistricting sliver; GCPS board size unverifiable (site JS-only, no Wikipedia count). Stays rejected-pending: 5-vs-6 unresolved."
   },
   {
     "id": "counties/nc/carteret/school_board_districts",

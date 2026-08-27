@@ -559,7 +559,22 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - School-board coverage: 22 files (incl. 3 state SBOE, 2 city boards,
   1 statewide IA set).
 
-## Next (round 22+)
+## Round 22 (Gwinnett refined)
+- [x] Gwinnett GCPS 5-vs-6: area analysis (districts 1-5 = 118-310
+  km2; polygon "0" = 6.9 km2 fragment) — unresolved, stays
+  rejected-pending; description refined in manifest.
+- [x] Alameda CA BOE (7 areas) confirmed already in repo.
+- [x] WAF retry (IL SBOE 2023, Riverside CA COE, SC RFA): all still
+  blocked; Tuscaloosa AL county BOE (official WARC) also WAF-400.
+- [x] County BOE mining: remaining CA county BOEs already deferred.
+- [x] Catalog re-render (395 rows) + full verify.py run: **ALL GOOD** —
+  395 files, 95,403 features, 0 geometry/catalog problems.
+
+## Round 22 running totals
+- **395 GeoJSON files, 2.2 GB** (no net new files this round —
+  refinement + verification round).
+
+## Next (round 23+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

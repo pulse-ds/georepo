@@ -390,7 +390,23 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (395 rows) + full verify.py run: **ALL GOOD**
       (395 files, 95,403 features).
 
-## Round 22+ (gap-filling & polish)
+## Round 22 (Gwinnett refined + Alameda confirmed)
+- [x] Gwinnett GCPS 5-vs-6 resolved with area analysis: districts 1-5
+      are 118-310 km2; polygon "0" is a 6.9 km2 fragment — cannot
+      determine genuine 6th district vs redistricting sliver (GCPS
+      board size unverifiable: site JS-only, no Wikipedia count).
+      Stays rejected-pending; description refined.
+- [x] Alameda CA BOE (7 trustee areas) confirmed already in repo
+      (manifest entry pre-existed; re-fetched OK).
+- [x] County BOE mining: Tuscaloosa AL (official WARC) WAF-400;
+      remaining CA county BOEs (SB/Kern/Riverside/Nevada/SB) already
+      WAF-deferred in manifest.
+- [x] WAF retry (IL SBOE 2023, Riverside CA COE, SC RFA): all still
+      blocked.
+- [x] Catalog re-render (395 rows) + full verify.py run: **ALL GOOD**
+      (395 files, 95,403 features).
+
+## Round 23+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
