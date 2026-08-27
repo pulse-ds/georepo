@@ -332,8 +332,32 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - School-board-district coverage now: 10 county files + 2 state SBOE.
 - City council files: 35; county commission files: 14.
 
-## Next (round 12+)
-- Cook County IL: retry #3 (17 manifest entries, 2015 boundaries).
+## Round 12 (CA county trustee areas)
+- [x] **+2 CA school-board files** (10 features; 380 total):
+  - `counties/ca/inyo/school_board_districts_2025.geojson` — 5 areas
+    I-V (official Inyo County GIS; 5-trustee standard for <100k
+    districts).
+  - `counties/ca/san_benito/school_board_districts_2025.geojson` — 5
+    districts D1-D5 (official San Benito County GIS; same standard).
+- [x] Deferred: Nevada County CA (WAF 400), Napa County CA (host
+  timeout), San Benito HS-district layer (org WAF).
+- [x] Gwinnett GCPS 5-vs-6 + Carteret NC 6-district structure checks
+  blocked (school sites JS-only/unreachable, Wikipedia rate-limited) —
+  stay pending-verification.
+- [x] WAF retry batch: Philly/KC/Austin/LV/Milwaukee/Aitkin all still
+  blocked (3rd consecutive round).
+- [x] Cook County retry #3: results below.
+- [x] Catalog re-render (380 rows) + full verify.py run: **ALL GOOD** —
+  380 files, 93,707 features, 0 geometry/catalog problems.
+
+## Round 12 running totals
+- **380 GeoJSON files, 2.2 GB** (round 11: 378).
+- School-board-district files: 14 county + 2 state SBOE = 16.
+
+## Next (round 13+)
+- Cook County IL: retry #4 (17 manifest entries, 2015 boundaries).
+- Deferred school-board layers to retry: Nevada + Napa CA, San Benito
+  HS district, Gwinnett GCPS (5-vs-6), Carteret NC (6-district check).
 - Verify Gwinnett GCPS 5-vs-6-district question; verify Carteret NC
   6-district board (both manifest entries ready).
 - Retry the WAF-400 layers (school board: Santa Cruz/Kern/Riverside/SB

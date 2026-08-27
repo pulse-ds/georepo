@@ -22,12 +22,12 @@ municipal) and then by geography type.
 | States (56) | County subdivision boundaries | done (TIGER COUSUB) |
 | Cities (35) | City council districts | done (official city GIS / AGL) |
 | Counties (14) | County commission / equivalent districts | done (pilot; many counties at-large) |
-| Counties (9) | School board electoral districts | done (pilot: FL/Lee, GA/Forsyth, GA/Chatham, LA×3, TN/Davidson, CA/Alameda, MD/Montgomery) |
+| Counties (11) | School board electoral districts | done (pilot: FL/Lee, GA/Forsyth, GA/Chatham, LA×3, TN/Davidson, CA×3, MD/Montgomery) |
 | States (2) | State board of education electoral districts | done (TX SBOE 2021, KS SBOE) |
 
-Current totals: **378 GeoJSON files, 2.2 GB** — all WGS84, all validated
+Current totals: **380 GeoJSON files, 2.2 GB** — all WGS84, all validated
 (see `CATALOG.csv`). Local-level coverage is a growing pilot: 35 city
-council files + 14 county commission files + 12 school-board-district
+council files + 14 county commission files + 14 school-board-district
 files, with a curated manifest of additional reachable sources and a
 documented gap list (see DEV.md).
 

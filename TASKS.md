@@ -211,7 +211,26 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (378 rows) + full verify.py run: **ALL GOOD**
       (378 files, 93,697 features).
 
-## Round 12+ (gap-filling & polish)
+## Round 12 (CA county trustee areas)
+- [x] **+2 CA school-board files** (10 features; 380 total):
+  - `counties/ca/inyo/school_board_districts_2025.geojson` — 5 areas
+    I-V (official Inyo County GIS; matches CA 5-trustee standard for
+    <100k districts).
+  - `counties/ca/san_benito/school_board_districts_2025.geojson` — 5
+    districts D1-D5 (official San Benito County GIS; same standard).
+- [x] Nevada County + Napa County trustee-area layers deferred
+  (WAF 400 / host timeout); San Benito HS-district layer deferred (org
+  WAF).
+- [x] Gwinnett GCPS 5-vs-6 and Carteret NC 6-district structure
+  checks: both school sites JS-only/unreachable, Wikipedia rate-limited
+  — items stay pending-verification in the manifest.
+- [x] WAF retry batch (Philly/KC/Austin/LV/Milwaukee/Aitkin): all
+      still blocked (3rd consecutive round) — stable.
+- [x] Cook County retry #3: in progress at catalog time (results
+      below).
+- [~] Catalog re-render + full verify.py run: results below.
+
+## Round 13+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
