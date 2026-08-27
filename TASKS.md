@@ -336,7 +336,25 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (390 rows) + full verify.py run: **ALL GOOD**
       (390 files, 94,637 features).
 
-## Round 18+ (gap-filling & polish)
+## Round 18 (WA school boards: Olympia + Whatcom)
+- [x] **+2 files** (18 features; 392 total):
+  - `cities/wa/olympia/school_board_districts_2025.geojson` — 5
+    director districts (Olympia School District, 5-director structure
+    verified).
+  - `counties/wa/whatcom/school_board_districts_2025.geojson` — 13
+    rural director districts (Cusick 5, Newport 5, Selkirk 3; partial
+    county coverage noted — larger Whatcom districts not in source).
+- [x] Kittitas County WA deferred: official KitCoGIS layer (16
+    polygons, 4 districts) + PUD 11-district variant both incomplete
+    vs per-district expectations; needs verification before acceptance.
+- [x] WAF retry (Puyallup WA pos 1/3/5, Washington Parish LA, UT SBOE):
+    all still blocked (7th consecutive round).
+- [x] Cook County retry #6: all 17 WAF-400 — 6th straight full failure;
+    durable retry script now at tools/fetch_cook.py.
+- [x] Catalog re-render (392 rows) + full verify.py run: **ALL GOOD**
+      (392 files, 94,655 features).
+
+## Round 19+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

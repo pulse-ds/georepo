@@ -1954,5 +1954,48 @@
     "lines_last_redrawn": "unknown (current map as of 2026)",
     "expected": 5,
     "description": "Waseca County (MN) commissioner districts (5, D1-D5; 5-commissioner board). A sibling layer adds an 'Unassigned' sliver (6 polygons) \u2014 this 5-district version is preferred."
+  },
+  {
+    "id": "cities/wa/olympia/school_board_districts",
+    "locale": "cities/wa/olympia",
+    "geography_type": "school_board_districts",
+    "vintage": "2025",
+    "service": "https://services1.arcgis.com/MA2nPVLxVTdAZLej/arcgis/rest/services/OlympiaSDDirectorDistricts/FeatureServer",
+    "layer": 0,
+    "source": "Olympia (WA) (ambrogim city/county GIS account, OlympiaSDDirectorDistricts)",
+    "source_url": "https://services1.arcgis.com/MA2nPVLxVTdAZLej/arcgis/rest/services/OlympiaSDDirectorDistricts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 5,
+    "description": "Olympia (WA) school district director districts (5, numeric; 5-director Olympia School District structure verified)."
+  },
+  {
+    "id": "counties/wa/whatcom/school_board_districts",
+    "locale": "counties/wa/whatcom",
+    "geography_type": "school_board_districts",
+    "vintage": "2025",
+    "service": "https://services1.arcgis.com/o3wuEYcU5N00WpI1/arcgis/rest/services/School_Director_Districts___Open_Data/FeatureServer",
+    "layer": 0,
+    "source": "Whatcom County WA (Josh_Shelton county GIS open data)",
+    "source_url": "https://services1.arcgis.com/o3wuEYcU5N00WpI1/arcgis/rest/services/School_Director_Districts___Open_Data/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 13,
+    "description": "Whatcom County (WA) rural school director districts (13: Cusick 5, Newport 5, Selkirk 3 \u2014 3 of Whatcom's 8 school districts; partial county coverage noted)."
+  },
+  {
+    "id": "counties/wa/kittitas/school_board_districts",
+    "locale": "counties/wa/kittitas",
+    "geography_type": "school_board_districts",
+    "vintage": "2025",
+    "service": "https://services.arcgis.com/eSnyVpqwqWBADfzp/arcgis/rest/services/Schoolboard_Director_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Kittitas County WA (KitCoGIS official county org)",
+    "source_url": "https://services.arcgis.com/eSnyVpqwqWBADfzp/arcgis/rest/services/Schoolboard_Director_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown",
+    "expected": 16,
+    "enabled": false,
+    "description": "DEFERRED: 16 polygons across 4+ school districts (Cle Elum-Roslyn, Ellensburg, Thorp, Kittitas) \u2014 needs per-district verification of district counts before acceptance (multi-district combined layer). A PUD-published 11-district variant (KCPWD) also exists."
   }
 ]

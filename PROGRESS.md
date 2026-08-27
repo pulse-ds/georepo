@@ -492,7 +492,28 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - School-board coverage: 18 files (incl. 2 state SBOE + Seattle city
   board); county commission: 20 county files + 2 statewide.
 
-## Next (round 18+)
+## Round 18 (WA: Olympia + Whatcom)
+- [x] **+2 files** (18 features; 392 total):
+  - `cities/wa/olympia/school_board_districts_2025.geojson` — 5
+    director districts (5-director board verified).
+  - `counties/wa/whatcom/school_board_districts_2025.geojson` — 13
+    rural director districts (Cusick 5, Newport 5, Selkirk 3; partial
+    county coverage documented).
+- [x] Kittitas WA deferred (both candidate layers incomplete/unverified
+  per-district counts); KCPWD 11-district variant also noted.
+- [x] WAF retry: 7th consecutive full failure (Puyallup ×3, Wash Parish
+  LA, UT SBOE).
+- [x] Cook County retry #6: 6th straight full failure; durable script
+  saved (tools/fetch_cook.py).
+- [x] Catalog re-render (392 rows) + full verify.py run: **ALL GOOD** —
+  392 files, 94,655 features, 0 geometry/catalog problems.
+
+## Round 18 running totals
+- **392 GeoJSON files, 2.2 GB** (round 17: 390).
+- School-board coverage: 20 files (incl. 2 state SBOE + 2 city school
+  boards + 1 rural county set).
+
+## Next (round 19+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

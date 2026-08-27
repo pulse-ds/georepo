@@ -329,6 +329,16 @@
   "source": "City of Virginia Beach (official)",
   "source_url": "https://services2.arcgis.com/CyVvlIiUfRBmMQuu/arcgis/rest/services/2022_City_Council_Districts_Map/FeatureServer"
  },
+ "cities/wa/olympia/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Olympia (WA) school district director districts (5, numeric; 5-director Olympia School District structure verified).",
+  "features": 5,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "cities/wa/olympia/school_board_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Olympia (WA) (ambrogim city/county GIS account, OlympiaSDDirectorDistricts)",
+  "source_url": "https://services1.arcgis.com/MA2nPVLxVTdAZLej/arcgis/rest/services/OlympiaSDDirectorDistricts/FeatureServer"
+ },
  "cities/wa/seattle/city_council_districts/city_council_districts_2022.geojson": {
   "description": "Seattle city council districts (7 district seats + 1 at-large), 2024 map.",
   "features": 7,
@@ -678,6 +688,16 @@
   "published": "unknown",
   "source": "Fairfax County VA (FX.AuthData official county account)",
   "source_url": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Supervisor_Districts/FeatureServer"
+ },
+ "counties/wa/whatcom/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Whatcom County (WA) rural school director districts (13: Cusick 5, Newport 5, Selkirk 3 \u2014 3 of Whatcom's 8 school districts; partial county coverage noted).",
+  "features": 13,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "counties/wa/whatcom/school_board_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Whatcom County WA (Josh_Shelton county GIS open data)",
+  "source_url": "https://services1.arcgis.com/o3wuEYcU5N00WpI1/arcgis/rest/services/School_Director_Districts___Open_Data/FeatureServer"
  },
  "states/ak/county_subdivisions/county_subdivisions_2025.geojson": {
   "description": "Alaska: county subdivisions (civil townships, towns, municipalities) boundaries (TIGER COUSUB). Context layer \u2014 does NOT include council or commission district lines. 37 features.",
