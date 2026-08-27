@@ -178,15 +178,56 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **360 GeoJSON files, 2.2 GB** (round 4: 356).
 - Local level: 32 city council + 10 county commission files.
 
-## Next (round 6+)
-- School board seats data build per the DEV.md plan (pick 1–2 pilot
-  states; clarify per-district local boards vs. state SBOE seats first).
+## Round 6 (retries + discovery)
+- Retries blocked: Milwaukee + Santa Clara County (persistent WAF 400),
+  El Paso CO #4 (no JSON).
+- Board-size bracket probes (FL/GA/OH/TN/KY/IN official sites + Justia,
+  OpenJurist, Casetext, Lawserver, FindLaw, OneCLE): ALL blocked,
+  403, or JS-rendered. Systematic finding: no state statute host is
+  statically readable from this sandbox.
+- **Discovery**: AGL search `school board district` surfaces official
+  county/parish layers of the electoral districts in which school board
+  members are elected — the "school board seats" as geography.
+
+## Round 7 (school board districts)
+- [x] **5 school-board-district files delivered** (47 features; 365
+  total files):
+  - `counties/fl/lee/school_board_districts_2025.geojson` — 5, per-member
+    named (official Lee County FL GIS).
+  - `counties/ga/forsyth/school_board_districts_2025.geojson` — 5
+    (official Forsyth County GIS; 5-district board verified via Wikipedia).
+  - `counties/la/st_mary/school_board_districts_2022.geojson` — 11, 2022
+    adopted plan (11-district board verified on stmary.gov directory).
+  - `counties/la/st_john_the_baptist/school_board_districts_2022.geojson`
+    — 11, 2022 adopted plan (caveat: structure not independently verified).
+  - `states/tx/state_board_of_education_districts_2021.geojson` — 15 TX
+    SBOE electoral districts, 2021 redistricting (Texas Capitol Data
+    Portal, via Bexar County's official AGL org).
+- [x] **6 rejections documented** (manifest, disabled): Wake NC (9
+  polygons vs 7-member WCPSS board — pre-2017 map), St. Charles LA (8
+  blank polygons), 2× unlabeled unknown provenance, Peoria 150 IL (3 of 7
+  districts), Hillsborough FL (WAF 400).
+- [x] Catalog re-render (365 rows) + full verify.py run: **ALL GOOD** —
+  365 files, 93,613 features, 0 geometry/catalog problems.
+
+## Round 7 running totals
+- **365 GeoJSON files, 2.2 GB** (round 5: 360).
+- Local level: 32 city council + 10 county commission + 4 school board
+  district files; +1 state SBOE electoral-district file.
+
+## Next (round 8+)
+- More school-board-district layers: retry Hillsborough FL, mine the
+  AGL `school board district` results further (LA parishes with 2022
+  adopted plans, other FL/GA/NC counties, IL/CO), verify St. John the
+  Baptist Parish structure.
+- Per-district board-SEAT-COUNT CSVs (governance attribute) remain
+  blocked on statute sources — see DEV.md; the district-geometry
+  approach above is the practical path for "seats."
 - Local-level gap-filling: Detroit, New Orleans, Philadelphia, Kansas City
   MO, Memphis, LA, Austin, Tampa, Milwaukee, Louisville, Cincinnati, OKC,
-  SF, Raleigh, San Jose, LV. More county coverage (NC/SC/MN district-based
-  boards; FL beyond Lee/Collier).
+  San Jose, LV. More county coverage (NC/SC/MN district-based boards;
+  FL beyond Lee/Collier).
 - El Paso County (CO): retry (ArcGIS service intermittently loses layers).
 - MD/NH/VT legislative: replace stale Census maps when a current
   state/ArcGIS source is found.
 - Tighten `lines_last_redrawn` per state (confirm 2025-26 special cases).
-- Git init + size policy (data is 2.2 GB; consider Git LFS).

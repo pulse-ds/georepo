@@ -97,9 +97,34 @@ Status legend: [ ] not started · [~] in progress · [x] done
       maps + base blocks) — stays stale.
 - [x] Git: `git init` (branch main), .gitignore (data/, venv, cache),
       first commit (docs + tools + catalog); LFS policy documented.
-- [~] Catalog re-render (360 rows) + full verify.py run (background).
+- [x] Catalog re-render (360 rows) + full verify.py run: **ALL GOOD**
+      (360 files, 93,566 features).
 
-## Round 6+ (gap-filling & polish)
+## Round 6 (retries + school-board-district discovery)
+- [x] Retries: Milwaukee + Santa Clara County — persistent WAF 400
+      (blocked, low hit probability); El Paso CO #4 — still no JSON.
+- [x] Statute-source probes for board-size brackets (FL/GA/OH/TN/KY/IN
+      + mirrors): all blocked or JS-rendered — documented in DEV.md.
+- [x] AGL discovery: `school board district` search surfaces official
+      layers of board electoral districts (the "seats" as geography) —
+      validated + delivered in round 7.
+
+## Round 7 (school board districts breakthrough)
+- [x] 5 files delivered (47 features): FL/Lee (5, per-member named,
+      official), GA/Forsyth (5, structure verified via Wikipedia),
+      LA/St. Mary (11, verified on stmary.gov), LA/St. John the Baptist
+      (11, 2022 adopted plan, caveat), TX SBOE statewide (15, 2021
+      redistricting, from Texas Capitol Data Portal).
+- [x] Rejections documented in manifest (6): Wake NC (stale 9-district
+      pre-2017 map), St. Charles LA (blank attrs), 2× unlabeled unknown
+      provenance, Peoria 150 IL (3 of 7 districts), Hillsborough FL
+      (WAF 400 — retry).
+- [x] Catalog re-render (365 rows) + full verify.py run: **ALL GOOD**
+      (365 files, 93,613 features).
+- [x] DEV.md: board-structure verification methods that work + SBOE-on-
+      county-org discovery trick.
+
+## Round 8+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

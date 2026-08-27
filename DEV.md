@@ -99,6 +99,30 @@ per-district board-seat count from the reachable hosts:
   has no FL bracket table. So the FL pilot is blocked on a readable
   bracket source; a browser-rendering fetch or a per-district
   "board consists of N members" scrape would unblock it.
+- **Round 6/7 breakthrough — school board DISTRICTS are obtainable via
+  AGL**: the AGL search phrase `school board district` (and
+  `"school board districts"`) surfaces official county/parish layers of
+  the electoral districts in which board members are elected. Delivered
+  in round 7: FL/Lee (5, per-member named, official Lee County FL GIS),
+  GA/Forsyth (5, official Forsyth County GIS; 5-district structure
+  verified via Wikipedia "Forsyth County Schools"), LA/St. Mary (11,
+  "2022 adopted plan" publisher J-Mann; 11-district board verified on
+  stmary.gov board-members directory — district badges 1-11),
+  LA/St. John the Baptist (11, same 2022 adopted plan, structure not
+  independently verified — caveat in catalog). Also **state-level**:
+  "State_Board_of_Education_Redistricted" on Bexar County's official
+  AGL org actually tiles the ENTIRE state — 15 TX SBOE electoral
+  districts, 2021 redistricting (per layer metadata, from the Texas
+  Capitol Data Portal). Delivered as
+  `states/tx/state_board_of_education_districts_2021.geojson`.
+  Rejected (manifest, disabled): Wake NC (9 polygons vs 7-member WCPSS
+  board — pre-2017 map), St. Charles LA 2022 (8 blank polygons), two
+  unlabeled 12/9-polygon layers of unknown provenance, Peoria 150 IL
+  (only 3 of 7 districts), Hillsborough FL (persistent WAF 400 — retry).
+  Verification sources that WORKED for board structure: district/parish
+  official websites (stmary.gov — FacileThings sites expose the member
+  directory in HTML even when the nav is JS) and Wikipedia district
+  articles (board sections sometimes state "N districts").
 
 **Recommendation for a future round** (if board seats are needed):
 build a **per-district enrichment CSV, not a shapefile**:

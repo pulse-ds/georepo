@@ -339,6 +339,16 @@
   "source": "Lee County, FL GIS (official)",
   "source_url": "https://services2.arcgis.com/LvWGAAhHwbCJ2GMP/arcgis/rest/services/CommissionerDistricts/FeatureServer"
  },
+ "counties/fl/lee/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Lee County FL school board districts (5); polygons named per current school board member (unofficial naming).",
+  "features": 5,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "counties/fl/lee/school_board_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Lee County FL GIS (official)",
+  "source_url": "https://services2.arcgis.com/LvWGAAhHwbCJ2GMP/arcgis/rest/services/SchoolBoardDistricts/FeatureServer"
+ },
  "counties/ga/cherokee/county_commission_districts/county_commission_districts_2019.geojson": {
   "description": "Cherokee County (GA) commissioners' districts (5).",
   "features": 5,
@@ -349,6 +359,16 @@
   "source": "Cherokee County, GA (official GIS org)",
   "source_url": "https://services5.arcgis.com/UmQCfTNQbyTzAV5N/arcgis/rest/services/Commissioners_Districts/FeatureServer"
  },
+ "counties/ga/forsyth/school_board_districts/school_board_districts_2025.geojson": {
+  "description": "Forsyth County (GA) Board of Education districts (5 single-member districts; 5-district structure verified via Wikipedia 2025).",
+  "features": 5,
+  "filename": "school_board_districts_2025.geojson",
+  "folder": "counties/ga/forsyth/school_board_districts",
+  "lines_last_redrawn": "current map as of 2026 (redistricting year unverified)",
+  "published": "unknown",
+  "source": "Forsyth County GIS (official)",
+  "source_url": "https://services2.arcgis.com/StQaZGYzUARPnrpL/arcgis/rest/services/Board_of_Education_District/FeatureServer"
+ },
  "counties/id/ada/county_commission_districts/county_commission_districts_2019.geojson": {
   "description": "Ada County (ID) commissioner districts (5).",
   "features": 3,
@@ -358,6 +378,26 @@
   "published": "unknown",
   "source": "Ada County, ID (Boise) GIS (official)",
   "source_url": "https://services2.arcgis.com/dgGjZc6xAH5m5JyP/arcgis/rest/services/Commissioner_District/FeatureServer"
+ },
+ "counties/la/st_john_the_baptist/school_board_districts/school_board_districts_2022.geojson": {
+  "description": "St. John the Baptist Parish (LA) school board districts (11); 2022 adopted plan. Board structure NOT independently verified (parish/district sites unreachable); same publisher as verified St. Mary plan.",
+  "features": 11,
+  "filename": "school_board_districts_2022.geojson",
+  "folder": "counties/la/st_john_the_baptist/school_board_districts",
+  "lines_last_redrawn": "2022 adopted plan",
+  "published": "2022",
+  "source": "St. John the Baptist Parish 2022 adopted plan (via AGL publisher J-Mann)",
+  "source_url": "https://services5.arcgis.com/NaE1rjvJf3JdTAkI/arcgis/rest/services/StJohn_SBDistricts_2022/FeatureServer"
+ },
+ "counties/la/st_mary/school_board_districts/school_board_districts_2022.geojson": {
+  "description": "St. Mary Parish (LA) school board districts (11); 2022 adopted plan; 11-district board structure verified on stmary.gov board directory (2026).",
+  "features": 11,
+  "filename": "school_board_districts_2022.geojson",
+  "folder": "counties/la/st_mary/school_board_districts",
+  "lines_last_redrawn": "2022 adopted plan",
+  "published": "2022",
+  "source": "St. Mary Parish 2022 adopted plan (via AGL publisher J-Mann)",
+  "source_url": "https://services5.arcgis.com/NaE1rjvJf3JdTAkI/arcgis/rest/services/StMary_SBDistricts_2022/FeatureServer"
  },
  "counties/nc/mecklenburg/county_commission_districts/county_commission_districts_2022.geojson": {
   "description": "Mecklenburg County (NC) board of commissioners \u2014 5 district polygons (named per commissioner) + 1 at-large countywide polygon = 6 commissioners.",
@@ -3088,6 +3128,16 @@
   "published": "2025 (TIGER 2025 release)",
   "source": "U.S. Census Bureau TIGER/Line",
   "source_url": "https://www2.census.gov/geo/tiger/TIGER2025/UNSD/tl_2025_48_unsd.zip"
+ },
+ "states/tx/state_board_of_education_districts/state_board_of_education_districts_2021.geojson": {
+  "description": "Texas State Board of Education (SBOE) electoral districts (15, single-member); 2021 redistricting, per layer metadata (capitol.texas.gov redistricting report). Unlabeled polygons.",
+  "features": 15,
+  "filename": "state_board_of_education_districts_2021.geojson",
+  "folder": "states/tx/state_board_of_education_districts",
+  "lines_last_redrawn": "2021 (post-redistricting per layer metadata)",
+  "published": "2021",
+  "source": "Texas Capitol Data Portal (Legislative Council), published by Bexar County GIS (official)",
+  "source_url": "https://services1.arcgis.com/8onVmslF2KXErTHT/arcgis/rest/services/State_Board_of_Education_Redistricted/FeatureServer"
  },
  "states/tx/state_house_districts/state_house_districts_2025.geojson": {
   "description": "Texas: State house of representatives districts, TIGER SLDL (lower chamber). 150 districts.",
