@@ -419,6 +419,16 @@
   "source": "Inyo County CA GIS (official county org)",
   "source_url": "https://services.arcgis.com/0jRlQ17Qmni5zEMr/arcgis/rest/services/Board_of_Education_Areas/FeatureServer"
  },
+ "counties/ca/los_angeles/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Los Angeles County (CA) supervisorial districts (5, labeled 1-5; 5-supervisor board verified).",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/ca/los_angeles/county_commission_districts",
+  "lines_last_redrawn": "unknown",
+  "published": "unknown",
+  "source": "LA County CA (HickoJ@dcfs.lacounty.gov, layer 1 Supervisorial_Districts)",
+  "source_url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Supervisorial_Districts/FeatureServer/1"
+ },
  "counties/ca/san_benito/school_board_districts/school_board_districts_2025.geojson": {
   "description": "San Benito County (CA) school board districts (5, D1-D5); matches CA 5-trustee standard for districts under 100k enrollment; county BOE site unreachable \u2014 structure via statutory standard.",
   "features": 5,
@@ -428,6 +438,16 @@
   "published": "unknown",
   "source": "San Benito County CA GIS (official county org)",
   "source_url": "https://services2.arcgis.com/NjMFCzThTMQy3AJa/arcgis/rest/services/Board_of_Education/FeatureServer"
+ },
+ "counties/ca/santa_clara/county_commission_districts/county_commission_districts_2021.geojson": {
+  "description": "Santa Clara County (CA) supervisorial districts (5 unlabeled; 5-supervisor board verified by count; 2021 plan; no labels in source).",
+  "features": 5,
+  "filename": "county_commission_districts_2021.geojson",
+  "folder": "counties/ca/santa_clara/county_commission_districts",
+  "lines_last_redrawn": "2021 (per layer name)",
+  "published": "2021",
+  "source": "Santa Clara County CA (SCC.Planning.Office, layer 24 'Supervisor 2021 Districts')",
+  "source_url": "https://services2.arcgis.com/tcv2cMrq63AgvbHF/arcgis/rest/services/Supervisorial_Districts_2021/FeatureServer/24"
  },
  "counties/ca/solano/county_commission_districts/county_commission_districts_2021.geojson": {
   "description": "Solano County (CA) supervisor districts (5, labeled 1-5; 5-supervisor board verified).",

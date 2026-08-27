@@ -651,7 +651,22 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **402 GeoJSON files, 2.2 GB** (round 26: 400).
 - County commission coverage: 27 county files + 2 statewide (MI/IA).
 
-## Next (round 28+)
+## Round 29 (CA: Santa Clara + LA County)
+- [x] **+2 files** (10 features; 404 total):
+  - `counties/ca/santa_clara/county_commission_districts_2021.geojson`
+    — 5 unlabeled (2021 plan; layer 24 fix).
+  - `counties/ca/los_angeles/county_commission_districts_2025.geojson`
+    — 5 labeled 1-5 (layer 1 fix).
+- [x] Layer-index technique turned 2 "deferred" entries into clean
+  fetches in one step.
+- [x] Catalog re-render (404 rows) + full verify.py run: **ALL GOOD** —
+  404 files, 95,442 features, 0 geometry/catalog problems.
+
+## Round 29 running totals
+- **404 GeoJSON files, 2.2 GB** (round 28: 402).
+- County commission coverage: 29 county files + 2 statewide (MI/IA).
+
+## Next (round 30+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

@@ -469,19 +469,35 @@ Status legend: [ ] not started · [~] in progress · [x] done
   - `counties/ca/solano/county_commission_districts_2021.geojson` —
     5 supervisor districts (official KCI_DoITGIS, 2021 plan; 2001/2011
     baselines also in same service).
-- [x] **+1 more file** (5 features; 402 total):
+- [x] CA county supervisor mining: Solano accepted; Mariposa REJECTED
+  (10 polygons = 5 labeled + 5 blank duplicates); Santa Clara 2021 +
+  LA County WAF-deferred; Contra Costa 404 (wrong layer index).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (401 rows) + full verify.py run: **ALL GOOD**
+      (401 files, 95,427 features).
+
+## Round 28 (CA: Contra Costa layer-index fix)
+- [x] **+1 file** (5 features; 402 total):
   - `counties/ca/contra_costa/county_commission_districts_2025.geojson`
     — 5 supervisor districts named per current supervisor (official
-    authoritative service, layer 21 BND_DCD_SupDist — the 404 from
-    round 27 was a wrong layer index, now fixed).
-- [x] CA county supervisor mining: Solano + Contra Costa accepted;
-  Mariposa REJECTED (10 polygons = 5 labeled + 5 blank duplicates);
-  Santa Clara 2021 + LA County WAF-deferred.
-- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+    authoritative service, layer 21 BND_DCD_SupDist — the 404 was a
+    wrong layer index, fixed by listing the service's layers).
 - [x] Catalog re-render (402 rows) + full verify.py run: **ALL GOOD**
       (402 files, 95,432 features).
 
-## Round 28+ (gap-filling & polish)
+## Round 29 (CA: Santa Clara + LA County)
+- [x] **+2 files** (10 features; 404 total):
+  - `counties/ca/santa_clara/county_commission_districts_2021.geojson`
+    — 5 unlabeled supervisorial districts (2021 plan; layer 24 fix).
+  - `counties/ca/los_angeles/county_commission_districts_2025.geojson`
+    — 5 labeled supervisorial districts 1-5 (layer 1 fix).
+- [x] Layer-index technique: when a CA service 404s at layer 0, list
+  the service's layers (`{service}?f=json`) and pick the right index
+  by name — turned 2 "deferred" entries into clean fetches in one step.
+- [x] Catalog re-render (404 rows) + full verify.py run: **ALL GOOD**
+      (404 files, 95,442 features).
+
+## Round 30+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
