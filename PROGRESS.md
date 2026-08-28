@@ -738,7 +738,21 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **407 GeoJSON files, 2.2 GB** (round 33: 406).
 - County commission coverage: 33 county files + 2 statewide (MI/IA).
 
-## Next (round 35+)
+## Round 35 (GA: DeKalb)
+- [x] **+1 file** (5 features; 408 total):
+  - `counties/ga/dekalb/county_commission_districts_2025.geojson` —
+    5 labeled districts 1-5 (official; one service per district,
+    combined into a single file).
+- [x] Fulton GA statewide 816: skipped (too large).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (408 rows) + full verify.py run: **ALL GOOD** —
+  408 files, 95,464 features, 0 geometry/catalog problems.
+
+## Round 35 running totals
+- **408 GeoJSON files, 2.2 GB** (round 34: 407).
+- County commission coverage: 34 county files + 2 statewide (MI/IA).
+
+## Next (round 36+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

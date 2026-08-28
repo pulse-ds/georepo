@@ -567,7 +567,19 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (407 rows) + full verify.py run: **ALL GOOD**
       (407 files, 95,459 features).
 
-## Round 35+ (gap-filling & polish)
+## Round 35 (GA: DeKalb)
+- [x] **+1 file** (5 features; 408 total):
+  - `counties/ga/dekalb/county_commission_districts_2025.geojson` —
+    5 labeled districts 1-5 (official DeKalb County GA; one service
+    per district — 5 layers each with 1 polygon, combined into a
+    single file).
+- [x] Fulton GA statewide 816: skipped (too large, not a single
+      county).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (408 rows) + full verify.py run: **ALL GOOD**
+      (408 files, 95,464 features).
+
+## Round 36+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
