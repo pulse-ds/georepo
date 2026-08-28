@@ -665,7 +665,16 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD**
       (409 files, 95,469 features).
 
-## Round 45+ (gap-filling & polish)
+## Round 45 (no new files)
+- [x] **No new files** (409 total) — WAF + mining round:
+  - MO/AR/LA/MS county mining: no new counties found.
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Cook IL, Milwaukee
+      WI, Riverside CA COE, Tuscaloosa AL): all still blocked
+      (25th+ rounds).
+- [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD**
+      (409 files, 95,469 features).
+
+## Round 46+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
