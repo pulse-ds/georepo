@@ -666,7 +666,22 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **404 GeoJSON files, 2.2 GB** (round 28: 402).
 - County commission coverage: 29 county files + 2 statewide (MI/IA).
 
-## Next (round 30+)
+## Round 30 (CA: San Bernardino/Nevada/Mariposa rejections)
+- [x] **No new files** (404 total) — mining/deferral round:
+  - San Bernardino CA REJECTED: 12 polygons = 5 labeled + 7 blank
+    fragments.
+  - Nevada County CA: 404 (service moved/renamed).
+  - Mariposa CA (2022 variant): REJECTED (10 polygons = 5 labeled +
+    5 blank duplicates).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (404 rows) + full verify.py run: **ALL GOOD** —
+  404 files, 95,442 features, 0 geometry/catalog problems.
+
+## Round 30 running totals
+- **404 GeoJSON files, 2.2 GB** (no net new files — deferral round).
+- County commission coverage: 29 county files + 2 statewide (MI/IA).
+
+## Next (round 31+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

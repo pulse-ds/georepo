@@ -497,7 +497,19 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (404 rows) + full verify.py run: **ALL GOOD**
       (404 files, 95,442 features).
 
-## Round 30+ (gap-filling & polish)
+## Round 30 (CA deferrals)
+- [x] **No new files** (404 total) — mining/deferral round:
+  - San Bernardino CA REJECTED: 12 polygons = 5 labeled + 7 blank
+    fragments.
+  - Nevada County CA: 404 (service moved/renamed — retry with updated
+    URL).
+  - Mariposa CA (2022 variant): REJECTED (10 polygons = 5 labeled +
+    5 blank duplicates).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (404 rows) + full verify.py run: **ALL GOOD**
+      (404 files, 95,442 features).
+
+## Round 31+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

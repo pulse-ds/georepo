@@ -2303,5 +2303,50 @@
     "expected": 5,
     "enabled": true,
     "description": "Contra Costa County (CA) supervisor districts (5, named per current supervisor \u2014 unofficial naming; 5-supervisor board verified by extent + count)."
+  },
+  {
+    "id": "counties/ca/san_bernardino/county_commission_districts",
+    "locale": "counties/ca/san_bernardino",
+    "geography_type": "county_commission_districts",
+    "vintage": "2021",
+    "service": "https://services.arcgis.com/KkJhFbLnXVqahKz2/arcgis/rest/services/Supervisorial_Districts_2021_Surveyor_With_Names/FeatureServer",
+    "layer": 0,
+    "source": "San Bernardino County CA (tmatlov_pw_cosb, 'Supervisorial_Districts_2021_Surveyor_With_Names')",
+    "source_url": "https://services.arcgis.com/KkJhFbLnXVqahKz2/arcgis/rest/services/Supervisorial_Districts_2021_Surveyor_With_Names/FeatureServer",
+    "published": "2021",
+    "lines_last_redrawn": "2021 (per layer name)",
+    "expected": 5,
+    "enabled": false,
+    "description": "REJECTED: 12 polygons = 5 labeled (First-Fifth District) + 7 blank fragments; the 5 labeled ones are correct but the blank fragments make the file unusable as-is; need a clean 5-polygon source."
+  },
+  {
+    "id": "counties/ca/nevada/county_commission_districts",
+    "locale": "counties/ca/nevada",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://maps.nevadacountyca.gov/arcgis/rest/services/web_public/Open_Data_Layers_Nevada_County_County_Supervisor_Districts/FeatureServer",
+    "layer": 0,
+    "source": "Nevada County CA (official maps.nevadacountyca.gov)",
+    "source_url": "https://maps.nevadacountyca.gov/arcgis/rest/services/web_public/Open_Data_Layers_Nevada_County_County_Supervisor_Districts/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown",
+    "expected": 5,
+    "enabled": false,
+    "description": "DEFERRED (retry): 404 \u2014 service may be moved or renamed; official Nevada County CA, retry with updated URL."
+  },
+  {
+    "id": "counties/ca/mariposa/county_commission_districts_2022",
+    "locale": "counties/ca/mariposa",
+    "geography_type": "county_commission_districts",
+    "vintage": "2022",
+    "service": "https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/Board_of_Supervisor_Districts_Effective_Jan_7th_2022/FeatureServer",
+    "layer": 0,
+    "source": "Mariposa County CA (official, 'effective Jan 7th 2022')",
+    "source_url": "https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/Board_of_Supervisor_Districts_Effective_Jan_7th_2022/FeatureServer",
+    "published": "2022",
+    "lines_last_redrawn": "2022 (effective Jan 7, 2022 per layer name)",
+    "expected": 5,
+    "enabled": false,
+    "description": "REJECTED: 10 polygons = 5 labeled (First-Fifth District) + 5 blank duplicates; need a clean 5-polygon source."
   }
 ]
