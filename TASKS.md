@@ -602,7 +602,16 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD**
       (409 files, 95,469 features).
 
-## Round 38+ (gap-filling & polish)
+## Round 38 (no new files)
+- [x] **No new files** (409 total) — WAF + mining round:
+  - Ada County ID (3) + Lee County FL (5): already in repo (2019 +
+    2017 vintages) — re-fetched same data, no new files.
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked
+      (18th+ rounds).
+- [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD**
+      (409 files, 95,469 features).
+
+## Round 39+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

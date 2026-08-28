@@ -650,7 +650,7 @@
   "source_url": "https://services1.arcgis.com/Ug5xGQbHsD8zuZzM/arcgis/rest/services/Putnam_County_Board_of_Education_Districts/FeatureServer"
  },
  "counties/id/ada/county_commission_districts/county_commission_districts_2019.geojson": {
-  "description": "Ada County (ID) commissioner districts (5).",
+  "description": "Ada County (ID) commissioner districts (3, single-member, named per current commissioner \u2014 3-commissioner/3-district structure since 2018 redistricting).",
   "features": 3,
   "filename": "county_commission_districts_2019.geojson",
   "folder": "counties/id/ada/county_commission_districts",
