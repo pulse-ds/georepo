@@ -534,7 +534,16 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (406 rows) + full verify.py run: **ALL GOOD**
       (406 files, 95,452 features).
 
-## Round 32+ (gap-filling & polish)
+## Round 32 (CA: no new files)
+- [x] **No new files** (406 total) — mining/deferral round:
+  - LA County "current" variant: already in repo (round 29).
+  - Decision Lens 2011: unofficial source, 2011 vintage — skip.
+  - Nevada County CA: 404 (service moved/renamed).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (406 rows) + full verify.py run: **ALL GOOD**
+      (406 files, 95,452 features).
+
+## Round 33+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

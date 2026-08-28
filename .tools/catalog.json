@@ -420,14 +420,14 @@
   "source_url": "https://services.arcgis.com/0jRlQ17Qmni5zEMr/arcgis/rest/services/Board_of_Education_Areas/FeatureServer"
  },
  "counties/ca/los_angeles/county_commission_districts/county_commission_districts_2025.geojson": {
-  "description": "Los Angeles County (CA) supervisorial districts (5, labeled 1-5; 5-supervisor board verified).",
+  "description": "Los Angeles County (CA) supervisorial districts (5, current; official authoritative service \u2014 preferred source over the DCFS variant in the manifest). Layer 27 (not layer 0 \u2014 layer-index fix technique). 2021 plan also in same service (layer 26).",
   "features": 5,
   "filename": "county_commission_districts_2025.geojson",
   "folder": "counties/ca/los_angeles/county_commission_districts",
-  "lines_last_redrawn": "unknown",
+  "lines_last_redrawn": "unknown (current as of 2026)",
   "published": "unknown",
-  "source": "LA County CA (HickoJ@dcfs.lacounty.gov, layer 1 Supervisorial_Districts)",
-  "source_url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Supervisorial_Districts/FeatureServer/1"
+  "source": "LA County CA (official arcgis.gis.lacounty.gov, layer 27 'Supervisorial District (Current)')",
+  "source_url": "https://arcgis.gis.lacounty.gov/arcgis/rest/services/LACounty_Dynamic/Political_Boundaries/MapServer/27"
  },
  "counties/ca/mariposa/county_commission_districts/county_commission_districts_2022.geojson": {
   "description": "Mariposa County (CA) board of supervisors districts (5 unlabeled; Option 5 plan \u2014 clean variant. The 'effective Jan 7th 2022' service has 10 polygons = 5+5 blanks and is rejected; this is the clean 5-polygon source).",

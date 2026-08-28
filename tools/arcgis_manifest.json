@@ -2390,5 +2390,19 @@
     "lines_last_redrawn": "2022 (Option 5 plan, effective per county decision)",
     "expected": 5,
     "description": "Mariposa County (CA) board of supervisors districts (5 unlabeled; Option 5 plan \u2014 clean variant. The 'effective Jan 7th 2022' service has 10 polygons = 5+5 blanks and is rejected; this is the clean 5-polygon source)."
+  },
+  {
+    "id": "counties/ca/los_angeles/county_commission_districts_2025_current",
+    "locale": "counties/ca/los_angeles",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://arcgis.gis.lacounty.gov/arcgis/rest/services/LACounty_Dynamic/Political_Boundaries/MapServer",
+    "layer": 27,
+    "source": "LA County CA (official arcgis.gis.lacounty.gov, layer 27 'Supervisorial District (Current)')",
+    "source_url": "https://arcgis.gis.lacounty.gov/arcgis/rest/services/LACounty_Dynamic/Political_Boundaries/MapServer/27",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current as of 2026)",
+    "expected": 5,
+    "description": "Los Angeles County (CA) supervisorial districts (5, current; official authoritative service \u2014 preferred source over the DCFS variant in the manifest). Layer 27 (not layer 0 \u2014 layer-index fix technique). 2021 plan also in same service (layer 26)."
   }
 ]
