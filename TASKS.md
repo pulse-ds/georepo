@@ -543,7 +543,17 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (406 rows) + full verify.py run: **ALL GOOD**
       (406 files, 95,452 features).
 
-## Round 33+ (gap-filling & polish)
+## Round 33 (no new files)
+- [x] **No new files** (406 total) — WAF + mining round:
+  - CA county mining: no new counties found (Solano, Contra Costa,
+    Santa Clara, LA County, Orange, Mariposa, Sonoma all already in
+    repo).
+  - WAF batch (Maine 2024, IL SBOE, SC RFA, Riverside CA COE,
+    Tuscaloosa AL): all still blocked (14th+ rounds).
+- [x] Catalog re-render (406 rows) + full verify.py run: **ALL GOOD**
+      (406 files, 95,452 features).
+
+## Round 34+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
