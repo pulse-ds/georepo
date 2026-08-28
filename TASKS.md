@@ -579,7 +579,16 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (408 rows) + full verify.py run: **ALL GOOD**
       (408 files, 95,464 features).
 
-## Round 36+ (gap-filling & polish)
+## Round 36 (no new files)
+- [x] **No new files** (408 total) — WAF + mining round:
+  - GA county mining: no new counties found (Glynn, DeKalb, Fulton
+    all already in repo or skipped).
+  - WAF batch (Maine 2024, IL SBOE, SC RFA, Riverside CA COE,
+    Tuscaloosa AL): all still blocked (16th+ rounds).
+- [x] Catalog re-render (408 rows) + full verify.py run: **ALL GOOD**
+      (408 files, 95,464 features).
+
+## Round 37+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
