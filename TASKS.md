@@ -588,7 +588,21 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (408 rows) + full verify.py run: **ALL GOOD**
       (408 files, 95,464 features).
 
-## Round 37+ (gap-filling & polish)
+## Round 37 (CA: Santa Cruz)
+- [x] **+1 file** (5 features; 409 total):
+  - `counties/ca/santa_cruz/county_commission_districts_2025.geojson`
+    — 5 labeled supervisorial districts 1-5 (official SantaCruzCountyGIS;
+    layer 18 fix).
+- [x] Maricopa AZ 2023+: still WAF-400 (service metadata loads but data
+      query blocked).
+- [x] Ada County ID + Lee County FL: noted (3 + 5 districts, named per
+      commissioner — potential future files).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Riverside CA COE,
+      Tuscaloosa AL): all still blocked (17th+ rounds).
+- [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD**
+      (409 files, 95,469 features).
+
+## Round 38+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

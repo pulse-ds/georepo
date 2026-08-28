@@ -2433,5 +2433,19 @@
     "expected": 5,
     "description": "DeKalb County (GA) commissioner districts (5, labeled District 1-5; 5-commissioner board verified). One service per district (5 layers, each 1 polygon) \u2014 combined into a single file.",
     "enabled": true
+  },
+  {
+    "id": "counties/ca/santa_cruz/county_commission_districts",
+    "locale": "counties/ca/santa_cruz",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services1.arcgis.com/jJfZghspGKh8J9Jm/arcgis/rest/services/County_Supervisor_Districts/FeatureServer",
+    "layer": 18,
+    "source": "Santa Cruz County CA (official SantaCruzCountyGIS, layer 18 County_Supervisor_Districts)",
+    "source_url": "https://services1.arcgis.com/jJfZghspGKh8J9Jm/arcgis/rest/services/County_Supervisor_Districts/FeatureServer/18",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 5,
+    "description": "Santa Cruz County (CA) supervisorial districts (5, labeled 'Supervisorial District 1-5'; 5-supervisor board verified). Layer 18 (not layer 0 \u2014 layer-index fix technique)."
   }
 ]

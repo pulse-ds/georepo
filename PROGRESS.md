@@ -764,7 +764,21 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **408 GeoJSON files, 2.2 GB** (no net new files — deferral round).
 - County commission coverage: 34 county files + 2 statewide (MI/IA).
 
-## Next (round 37+)
+## Round 37 (CA: Santa Cruz)
+- [x] **+1 file** (5 features; 409 total):
+  - `counties/ca/santa_cruz/county_commission_districts_2025.geojson`
+    — 5 labeled supervisorial districts 1-5 (official; layer 18 fix).
+- [x] Maricopa AZ 2023+: still WAF-400.
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Riverside CA COE,
+      Tuscaloosa AL): all still blocked (17th+ rounds).
+- [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD** —
+  409 files, 95,469 features, 0 geometry/catalog problems.
+
+## Round 37 running totals
+- **409 GeoJSON files, 2.2 GB** (round 36: 408).
+- County commission coverage: 35 county files + 2 statewide (MI/IA).
+
+## Next (round 38+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
