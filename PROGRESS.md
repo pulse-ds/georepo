@@ -791,7 +791,20 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **409 GeoJSON files, 2.2 GB** (no net new files — deferral round).
 - County commission coverage: 35 county files + 2 statewide (MI/IA).
 
-## Next (round 39+)
+## Round 39 (no new files)
+- [x] **No new files** (409 total) — WAF + mining round:
+  - Ada County ID (3) + Lee County FL (5): already in repo (2019 +
+    2017 vintages) — re-fetched same data, no new files.
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked
+      (19th+ rounds).
+- [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD** —
+  409 files, 95,469 features, 0 geometry/catalog problems.
+
+## Round 39 running totals
+- **409 GeoJSON files, 2.2 GB** (no net new files — deferral round).
+- County commission coverage: 35 county files + 2 statewide (MI/IA).
+
+## Next (round 40+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
