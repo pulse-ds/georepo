@@ -920,7 +920,22 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **409 GeoJSON files, 2.2 GB** (no net new files — deferral round).
 - County commission coverage: 35 county files + 2 statewide (MI/IA).
 
-## Next (round 49+)
+## Round 49 (AZ: Navajo)
+- [x] **+1 file** (5 features; 410 total):
+  - `counties/az/navajo/county_commission_districts_2025.geojson`
+    — 5 supervisor districts named per current supervisor (official;
+    layer 9 fix).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Cook IL, Milwaukee
+      WI, Riverside CA COE, Tuscaloosa AL): all still blocked
+      (29th+ rounds).
+- [x] Catalog re-render (410 rows) + full verify.py run: **ALL GOOD** —
+  410 files, 95,474 features, 0 geometry/catalog problems.
+
+## Round 49 running totals
+- **410 GeoJSON files, 2.2 GB** (round 48: 409).
+- County commission coverage: 36 county files + 2 statewide (MI/IA).
+
+## Next (round 50+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

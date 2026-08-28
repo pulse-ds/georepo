@@ -701,7 +701,18 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD**
       (409 files, 95,469 features).
 
-## Round 49+ (gap-filling & polish)
+## Round 49 (AZ: Navajo)
+- [x] **+1 file** (5 features; 410 total):
+  - `counties/az/navajo/county_commission_districts_2025.geojson`
+    — 5 supervisor districts named per current supervisor (official
+    Navajo County AZ, layer 9 fix).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Cook IL, Milwaukee
+      WI, Riverside CA COE, Tuscaloosa AL): all still blocked
+      (29th+ rounds).
+- [x] Catalog re-render (410 rows) + full verify.py run: **ALL GOOD**
+      (410 files, 95,474 features).
+
+## Round 50+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

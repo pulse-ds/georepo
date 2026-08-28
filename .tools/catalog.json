@@ -379,6 +379,16 @@
   "source": "Coconino County AZ (official county GIS, 'County Supervisor Districts 2025')",
   "source_url": "https://services1.arcgis.com/Rlvx5g8pKeK13apH/arcgis/rest/services/Adopted_Districts/FeatureServer"
  },
+ "counties/az/navajo/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Navajo County (AZ) supervisor districts (5, named per current supervisor \u2014 unofficial naming; 5-supervisor board verified by extent + count). Layer 9 (not layer 0 \u2014 layer-index fix technique). A '10-'20 vintage also exists in same service.",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/az/navajo/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Navajo County AZ (official NavajoCounty, SupervisorDistricts layer 9; named per current supervisor)",
+  "source_url": "https://services.arcgis.com/cghC2lEIpJ2TRrs5/arcgis/rest/services/SupervisorDistricts/FeatureServer/9"
+ },
  "counties/az/pima/county_commission_districts/county_commission_districts_2025.geojson": {
   "description": "Pima County (AZ) supervisor districts (5, named per current supervisor \u2014 unofficial naming; 5-supervisor/5-district structure).",
   "features": 5,
