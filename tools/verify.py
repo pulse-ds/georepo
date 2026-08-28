@@ -38,12 +38,13 @@ def find_geojsons(subset=None):
                     yield p
 
 
-def check_feature(ft, problems, i):
+def check_feature(ft, problems, i, allow_null_geom=False):
     if ft.get("type") != "Feature":
         problems.append(f"feature {i}: type {ft.get('type')!r}, not Feature")
     g = ft.get("geometry")
     if g is None:
-        problems.append(f"feature {i}: null geometry")
+        if not allow_null_geom:
+            problems.append(f"feature {i}: null geometry")
         return
 
     def bad_coord(c, ctx):
@@ -133,8 +134,11 @@ def main():
         crs = ((d.get("crs") or {}).get("properties") or {}).get("name")
         if crs is not None and crs != EXPECTED_CRS:
             problems.append(f"unexpected CRS {crs!r}")
+        # Allow null geometry for county_commission_districts (at-large seats
+        # have no polygon — e.g. Glynn GA 2 at-large + 5 districts = 7 features).
+        allow_null = os.path.basename(os.path.dirname(path)) == "county_commission_districts"
         for i, ft in enumerate(feats):
-            check_feature(ft, problems, i)
+            check_feature(ft, problems, i, allow_null_geom=allow_null)
         total_features += len(feats)
         etype = os.path.basename(os.path.dirname(path))
         by_type[etype] = by_type.get(etype, 0) + len(feats)

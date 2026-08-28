@@ -599,6 +599,16 @@
   "source": "Forsyth County GIS (official)",
   "source_url": "https://services2.arcgis.com/StQaZGYzUARPnrpL/arcgis/rest/services/Board_of_Education_District/FeatureServer"
  },
+ "counties/ga/glynn/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Glynn County (GA) commissioner districts (7 unlabeled; 7-commissioner board verified by count; no labels in source).",
+  "features": 7,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/ga/glynn/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Glynn County GA (official billie.gooch@glynncounty.org, Commissioner_Districts_Tasks)",
+  "source_url": "https://services.arcgis.com/5iWzb1srkjPDXmpL/arcgis/rest/services/Commissioner_Districts_Tasks/FeatureServer"
+ },
  "counties/ga/gwinnett/county_commission_districts/county_commission_districts_2025.geojson": {
   "description": "Gwinnett County (GA) commission districts (4, labeled 1-4); 5-member board = 1 at-large chair + 4 district members (Wikipedia, 2026).",
   "features": 4,

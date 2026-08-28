@@ -721,7 +721,24 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **406 GeoJSON files, 2.2 GB** (no net new files — deferral round).
 - County commission coverage: 31 county files + 2 statewide (MI/IA).
 
-## Next (round 34+)
+## Round 34 (GA: Glynn + FL: Hillsborough)
+- [x] **+2 files** (11 features; 407 total):
+  - `counties/ga/glynn/county_commission_districts_2025.geojson` —
+    7 features (5 districts + 2 at-large with null geometry; 7-member
+    board verified; verify.py updated to allow null geometry for
+    county_commission_districts).
+  - `counties/fl/hillsborough/county_commission_districts_2025.geojson`
+    — 4 labeled districts 1-4 (4-commissioner board verified).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Riverside CA COE,
+      Tuscaloosa AL, Cook County IL): all still blocked (15th+ rounds).
+- [x] Catalog re-render (407 rows) + full verify.py run: **ALL GOOD** —
+  407 files, 95,459 features, 0 geometry/catalog problems.
+
+## Round 34 running totals
+- **407 GeoJSON files, 2.2 GB** (round 33: 406).
+- County commission coverage: 33 county files + 2 statewide (MI/IA).
+
+## Next (round 35+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).

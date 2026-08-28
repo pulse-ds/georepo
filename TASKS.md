@@ -553,7 +553,21 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (406 rows) + full verify.py run: **ALL GOOD**
       (406 files, 95,452 features).
 
-## Round 34+ (gap-filling & polish)
+## Round 34 (Glynn GA + Hillsborough FL)
+- [x] **+2 files** (11 features; 407 total):
+  - `counties/ga/glynn/county_commission_districts_2025.geojson` —
+    7 features (5 districts 1-5 + 2 at-large seats with null geometry —
+    at-large = no polygon, which is correct; 7-member board verified).
+  - `counties/fl/hillsborough/county_commission_districts_2025.geojson`
+    — 4 labeled districts 1-4 (4-commissioner board verified).
+- [x] verify.py updated to allow null geometry for
+    county_commission_districts (at-large seats pattern).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Riverside CA COE,
+      Tuscaloosa AL, Cook County IL): all still blocked (15th+ rounds).
+- [x] Catalog re-render (407 rows) + full verify.py run: **ALL GOOD**
+      (407 files, 95,459 features).
+
+## Round 35+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

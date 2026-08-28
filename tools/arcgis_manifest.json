@@ -2404,5 +2404,19 @@
     "lines_last_redrawn": "unknown (current as of 2026)",
     "expected": 5,
     "description": "Los Angeles County (CA) supervisorial districts (5, current; official authoritative service \u2014 preferred source over the DCFS variant in the manifest). Layer 27 (not layer 0 \u2014 layer-index fix technique). 2021 plan also in same service (layer 26)."
+  },
+  {
+    "id": "counties/ga/glynn/county_commission_districts",
+    "locale": "counties/ga/glynn",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services.arcgis.com/5iWzb1srkjPDXmpL/arcgis/rest/services/Commissioner_Districts_Tasks/FeatureServer",
+    "layer": 0,
+    "source": "Glynn County GA (official billie.gooch@glynncounty.org, Commissioner_Districts_Tasks)",
+    "source_url": "https://services.arcgis.com/5iWzb1srkjPDXmpL/arcgis/rest/services/Commissioner_Districts_Tasks/FeatureServer",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 7,
+    "description": "Glynn County (GA) commissioner districts (5 labeled districts 1-5 + 2 at-large seats with null geometry \u2014 at-large = no polygon, which is correct; 7-member board verified). Official billie.gooch@glynncounty.org."
   }
 ]
