@@ -2348,5 +2348,47 @@
     "expected": 5,
     "enabled": false,
     "description": "REJECTED: 10 polygons = 5 labeled (First-Fifth District) + 5 blank duplicates; need a clean 5-polygon source."
+  },
+  {
+    "id": "counties/ca/orange/county_commission_districts",
+    "locale": "counties/ca/orange",
+    "geography_type": "county_commission_districts",
+    "vintage": "2025",
+    "service": "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/arcgis/rest/services/OC_Supervisory_Districts/FeatureServer",
+    "layer": 31,
+    "source": "Orange County CA (ktalexan, layer 31 OC_Supervisory_Districts; named per current supervisor)",
+    "source_url": "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/arcgis/rest/services/OC_Supervisory_Districts/FeatureServer/31",
+    "published": "unknown",
+    "lines_last_redrawn": "unknown (current map as of 2026)",
+    "expected": 5,
+    "description": "Orange County (CA) supervisorial districts (5, named per current supervisor \u2014 unofficial naming; 5-supervisor board verified by count). Layer 31 (not layer 0 \u2014 layer-index fix technique)."
+  },
+  {
+    "id": "counties/ca/mariposa/county_commission_districts_2022b",
+    "locale": "counties/ca/mariposa",
+    "geography_type": "county_commission_districts",
+    "vintage": "2022",
+    "service": "https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/Option_5_FINAL_PUBLIC/FeatureServer",
+    "layer": 0,
+    "source": "Mariposa County CA (official, 'Option_5_FINAL_PUBLIC' \u2014 clean 5-polygon variant)",
+    "source_url": "https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/Option_5_FINAL_PUBLIC/FeatureServer",
+    "published": "2022",
+    "lines_last_redrawn": "2022 (Option 5 plan, effective 2022 per Mariposa County)",
+    "expected": 5,
+    "description": "Mariposa County (CA) supervisor districts (5 unlabeled, clean \u2014 no blank duplicates; Option 5 plan). This is the clean variant of the Mariposa service (the 2022 'effective Jan 7th' variant has 10 polygons = 5+5 blanks and is rejected)."
+  },
+  {
+    "id": "counties/ca/mariposa/county_commission_districts_2022_clean",
+    "locale": "counties/ca/mariposa",
+    "geography_type": "county_commission_districts",
+    "vintage": "2022",
+    "service": "https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/Option_5_FINAL_PUBLIC/FeatureServer",
+    "layer": 0,
+    "source": "Mariposa County CA (official, 'Option_5_FINAL_PUBLIC' \u2014 clean 5-polygon variant)",
+    "source_url": "https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/Option_5_FINAL_PUBLIC/FeatureServer",
+    "published": "2022",
+    "lines_last_redrawn": "2022 (Option 5 plan, effective per county decision)",
+    "expected": 5,
+    "description": "Mariposa County (CA) board of supervisors districts (5 unlabeled; Option 5 plan \u2014 clean variant. The 'effective Jan 7th 2022' service has 10 polygons = 5+5 blanks and is rejected; this is the clean 5-polygon source)."
   }
 ]

@@ -503,13 +503,38 @@ Status legend: [ ] not started · [~] in progress · [x] done
     fragments.
   - Nevada County CA: 404 (service moved/renamed — retry with updated
     URL).
-  - Mariposa CA (2022 variant): REJECTED (10 polygons = 5 labeled +
-    5 blank duplicates).
+  - Mariposa CA (2022 "effective Jan 7th" variant): REJECTED (10
+    polygons = 5 labeled + 5 blank duplicates).
 - [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
 - [x] Catalog re-render (404 rows) + full verify.py run: **ALL GOOD**
       (404 files, 95,442 features).
 
-## Round 31+ (gap-filling & polish)
+## Round 31 (CA: Orange + Mariposa clean)
+- [x] **+2 files** (10 features; 406 total):
+  - `counties/ca/orange/county_commission_districts_2025.geojson` —
+    5 named per current supervisor (layer 31 fix).
+  - `counties/ca/mariposa/county_commission_districts_2022.geojson` —
+    5 unlabeled clean (Option 5 plan; the "effective Jan 7th" variant
+    has 5+5 blanks and is rejected — this is the clean source).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (406 rows) + full verify.py run: **ALL GOOD**
+      (406 files, 95,452 features).
+
+## Round 31 (CA: Orange + Mariposa Option 5)
+- [x] **+2 files** (10 features; 406 total):
+  - `counties/ca/orange/county_commission_districts_2025.geojson` —
+    5 supervisorial districts named per current supervisor (official
+    OC, layer 31 fix; 5-supervisor board verified).
+  - `counties/ca/mariposa/county_commission_districts_2022.geojson`
+    — 5 unlabeled, clean (Option 5 plan; the 2022 "effective Jan 7th"
+    variant has 10 polygons = 5+5 blanks and is rejected — this is the
+    clean variant).
+- [x] Layer-index technique again: Orange Co layer 31 (not 0).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (406 rows) + full verify.py run: **ALL GOOD**
+      (406 files, 95,452 features).
+
+## Round 32+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards

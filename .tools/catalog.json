@@ -429,6 +429,26 @@
   "source": "LA County CA (HickoJ@dcfs.lacounty.gov, layer 1 Supervisorial_Districts)",
   "source_url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Supervisorial_Districts/FeatureServer/1"
  },
+ "counties/ca/mariposa/county_commission_districts/county_commission_districts_2022.geojson": {
+  "description": "Mariposa County (CA) board of supervisors districts (5 unlabeled; Option 5 plan \u2014 clean variant. The 'effective Jan 7th 2022' service has 10 polygons = 5+5 blanks and is rejected; this is the clean 5-polygon source).",
+  "features": 5,
+  "filename": "county_commission_districts_2022.geojson",
+  "folder": "counties/ca/mariposa/county_commission_districts",
+  "lines_last_redrawn": "2022 (Option 5 plan, effective per county decision)",
+  "published": "2022",
+  "source": "Mariposa County CA (official, 'Option_5_FINAL_PUBLIC' \u2014 clean 5-polygon variant)",
+  "source_url": "https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/Option_5_FINAL_PUBLIC/FeatureServer"
+ },
+ "counties/ca/orange/county_commission_districts/county_commission_districts_2025.geojson": {
+  "description": "Orange County (CA) supervisorial districts (5, named per current supervisor \u2014 unofficial naming; 5-supervisor board verified by count). Layer 31 (not layer 0 \u2014 layer-index fix technique).",
+  "features": 5,
+  "filename": "county_commission_districts_2025.geojson",
+  "folder": "counties/ca/orange/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Orange County CA (ktalexan, layer 31 OC_Supervisory_Districts; named per current supervisor)",
+  "source_url": "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/arcgis/rest/services/OC_Supervisory_Districts/FeatureServer/31"
+ },
  "counties/ca/san_benito/school_board_districts/school_board_districts_2025.geojson": {
   "description": "San Benito County (CA) school board districts (5, D1-D5); matches CA 5-trustee standard for districts under 100k enrollment; county BOE site unreachable \u2014 structure via statutory standard.",
   "features": 5,

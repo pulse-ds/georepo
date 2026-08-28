@@ -681,7 +681,22 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - **404 GeoJSON files, 2.2 GB** (no net new files — deferral round).
 - County commission coverage: 29 county files + 2 statewide (MI/IA).
 
-## Next (round 31+)
+## Round 31 (CA: Orange + Mariposa clean)
+- [x] **+2 files** (10 features; 406 total):
+  - `counties/ca/orange/county_commission_districts_2025.geojson` —
+    5 named per current supervisor (layer 31 fix).
+  - `counties/ca/mariposa/county_commission_districts_2022.geojson` —
+    5 unlabeled clean (Option 5 plan; the 2022 "effective Jan 7th"
+    variant has 5+5 blanks and is rejected — this is the clean source).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA): all still blocked.
+- [x] Catalog re-render (406 rows) + full verify.py run: **ALL GOOD** —
+  406 files, 95,452 features, 0 geometry/catalog problems.
+
+## Round 31 running totals
+- **406 GeoJSON files, 2.2 GB** (round 30: 404).
+- County commission coverage: 31 county files + 2 statewide (MI/IA).
+
+## Next (round 32+)
 - Cook County IL: retry (17 manifest entries, 2015 boundaries).
 - Deferred school-board layers to retry: Nevada + Napa CA, San Benito
   HS district. Gwinnett GCPS stays rejected-pending (no source found).
