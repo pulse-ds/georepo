@@ -655,7 +655,17 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD**
       (409 files, 95,469 features).
 
-## Round 44+ (gap-filling & polish)
+## Round 44 (no new files)
+- [x] **No new files** (409 total) — WAF + mining round:
+  - Cook County IL 17 districts (official) + Milwaukee County WI 18
+    supervisory districts: both WAF-400 (data queries blocked).
+- [x] WAF batch (Maine 2024, IL SBOE, SC RFA, Cook IL, Milwaukee
+      WI, Riverside CA COE, Tuscaloosa AL): all still blocked
+      (24th+ rounds).
+- [x] Catalog re-render (409 rows) + full verify.py run: **ALL GOOD**
+      (409 files, 95,469 features).
+
+## Round 45+ (gap-filling & polish)
 - [ ] School board seats data build: per-state CSV pipeline per the DEV.md
       recommendation (statutory enrollment brackets + reachable enrollment
       source per state); confirm with requester: per-district local boards
