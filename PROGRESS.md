@@ -3629,6 +3629,32 @@ full-repo validation ALL GOOD). Round-by-round detail below.
 - WAF-deferred remainder documented in DEV.md (access-blocked, not
   coverage gaps).
 
+## Round 257 — CA top-10 gap fill (user request, 8 new files)
+- User asked: determine CA county-commission + school-board coverage and
+  fetch missing lines for the top-10 CA counties (by population: LA, San
+  Diego, Orange, Riverside, San Bernardino, Santa Clara, Alameda, Contra
+  Costa, Sacramento, Fresno).
+- **6 new county commission files**: San Diego, Riverside (official,
+  2021 map), San Bernardino (official, clean 5-poly), Alameda (official),
+  Sacramento (labeled + supervisor names), Fresno (official ELECTIONS
+  layer, 401-405). All 5 polygons, extents verified; Riverside also
+  landmark point-in-polygon verified.
+- **2 new school board (county BOE) files**: San Bernardino (official
+  "areas", 5 polygons, unlabeled) + Santa Clara (2022, 7 polygons =
+  7-trustee board, unlabeled).
+- School boards NOT retrievable for LA (stub service), Orange (stub
+  service), San Diego / Contra Costa / Sacramento / Fresno (no AGL
+  sources; only draft proposals or unofficial copies found).
+- Commission coverage for the top 10 is now **10/10 complete**.
+- School board coverage for the top 10: Alameda (existing) + San
+  Bernardino + Santa Clara = 3/10; the other 7 remain a gap (LA and OC
+  services exist but return 0 layers / 400 — retry later).
+
+## Round 257 running totals
+- **418 GeoJSON files** (up from 410) — verify.py **ALL GOOD**.
+- county_commission_districts: 1055 → 1085 features.
+- school_board_districts: 842 → 854 features.
+
 ## Next
 - Goal complete. If WAF blocks clear later, resume by retrying the
   WAF-deferred list in DEV.md (Maine 2024 first — highest value).

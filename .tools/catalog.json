@@ -399,6 +399,16 @@
   "source": "Tucson/Pima County AZ GIS (official, PCBOS layer)",
   "source_url": "https://mapdata.tucsonaz.gov/arcgis/rest/services/IT/ZoomTucson/MapServer/12"
  },
+ "counties/ca/alameda/county_commission_districts/county_commission_districts_unknown.geojson": {
+  "description": "Alameda County (CA) supervisorial districts (5, labeled '1st-5th Supervisorial District' via Dist_name field; official county org; county extent verified).",
+  "features": 5,
+  "filename": "county_commission_districts_unknown.geojson",
+  "folder": "counties/ca/alameda/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Alameda County (official AlamedaCounty.CA.US AGL org, Board_of_Supervisors_District_Boundaries)",
+  "source_url": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Board_of_Supervisors_District_Boundaries/FeatureServer/0"
+ },
  "counties/ca/alameda/school_board_districts/school_board_districts_2025.geojson": {
   "description": "Alameda County (CA) Board of Education trustee areas (7, single-member, labeled 1st-7th).",
   "features": 7,
@@ -418,6 +428,16 @@
   "published": "unknown",
   "source": "Contra Costa County CA (official authoritative service, layer 21 BND_DCD_SupDist)",
   "source_url": "https://gis.cccounty.us/arcgis/rest/services/_Authoritative/Board_of_Supervisor_Districts/MapServer/21"
+ },
+ "counties/ca/fresno/county_commission_districts/county_commission_districts_unknown.geojson": {
+  "description": "Fresno County (CA) supervisorial districts (5, labeled 401-405 via CD_SUPRDIS field; ELECTIONS-prefixed layer = current voting map; county extent verified).",
+  "features": 5,
+  "filename": "county_commission_districts_unknown.geojson",
+  "folder": "counties/ca/fresno/county_commission_districts",
+  "lines_last_redrawn": "unknown (current elections map as of 2026)",
+  "published": "unknown",
+  "source": "Fresno County (FHedgarr8 AGL org, Fresno_County_ELECTIONS_SUPERVISOR_DISTRICTS)",
+  "source_url": "https://services9.arcgis.com/9sakEbvRePQ7EsYQ/arcgis/rest/services/Fresno_County_ELECTIONS_SUPERVISOR_DISTRICTS/FeatureServer/0"
  },
  "counties/ca/inyo/school_board_districts/school_board_districts_2025.geojson": {
   "description": "Inyo County (CA) school board areas (5, Areas I-V); matches CA 5-trustee standard for districts under 100k enrollment (Inyo pop. ~19k); county BOE site unreachable \u2014 structure via statutory standard.",
@@ -459,6 +479,26 @@
   "source": "Orange County CA (ktalexan, layer 31 OC_Supervisory_Districts; named per current supervisor)",
   "source_url": "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/arcgis/rest/services/OC_Supervisory_Districts/FeatureServer/31"
  },
+ "counties/ca/riverside/county_commission_districts/county_commission_districts_2021.geojson": {
+  "description": "Riverside County (CA) supervisorial districts (5, labeled 'District 1-5' via SUPERVISOR field; official production GDB layer maintained by RCIT-GIS; county extent + landmark point-in-polygon verified).",
+  "features": 5,
+  "filename": "county_commission_districts_2021.geojson",
+  "folder": "counties/ca/riverside/county_commission_districts",
+  "lines_last_redrawn": "2021 (2021 supervisorial redistricting; sibling layer '2021 Supervisorial District Manual Updated' in same org)",
+  "published": "unknown",
+  "source": "Riverside County (official GISOpenData@rivco.org, GDB_PUB.RIVCO.SUPERVISORIAL_DISTRICTS)",
+  "source_url": "https://services1.arcgis.com/pWmBUdSlVpXStHU6/arcgis/rest/services/SupervisorialDistricts/FeatureServer/0"
+ },
+ "counties/ca/sacramento/county_commission_districts/county_commission_districts_unknown.geojson": {
+  "description": "Sacramento County (CA) supervisorial districts (5, labeled 'District 1-5' via DISTRICT field, SUPERVISOR field also present; county extent verified).",
+  "features": 5,
+  "filename": "county_commission_districts_unknown.geojson",
+  "folder": "counties/ca/sacramento/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "Sacramento County (SCGISAdmin AGL org, SupervisorDistricts)",
+  "source_url": "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/SupervisorDistricts/FeatureServer/0"
+ },
  "counties/ca/san_benito/school_board_districts/school_board_districts_2025.geojson": {
   "description": "San Benito County (CA) school board districts (5, D1-D5); matches CA 5-trustee standard for districts under 100k enrollment; county BOE site unreachable \u2014 structure via statutory standard.",
   "features": 5,
@@ -469,6 +509,36 @@
   "source": "San Benito County CA GIS (official county org)",
   "source_url": "https://services2.arcgis.com/NjMFCzThTMQy3AJa/arcgis/rest/services/Board_of_Education/FeatureServer"
  },
+ "counties/ca/san_bernardino/county_commission_districts/county_commission_districts_unknown.geojson": {
+  "description": "San Bernardino County (CA) supervisorial districts (5, labeled 'District 1-5' via NAME field; clean 5-polygon official layer. Supersedes the earlier REJECTED tmatlov_pw_cosb 'Supervisorial_Districts_2021_Surveyor_With_Names' candidate, which shipped 5 labeled + 7 blank fragments.)",
+  "features": 5,
+  "filename": "county_commission_districts_unknown.geojson",
+  "folder": "counties/ca/san_bernardino/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "San Bernardino County CA (official County_Of_San_Bernardino AGL org, 'San_Bernardino_County_Supervisorial_Districts')",
+  "source_url": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/San_Bernardino_County_Supervisorial_Districts/FeatureServer/0"
+ },
+ "counties/ca/san_bernardino/school_board_districts/school_board_districts_unknown.geojson": {
+  "description": "San Bernardino County (CA) Board of Education trustee areas (5 solid polygons, all verified with full geometry; official county org; county extent verified. Service does not export attributes. Note: an older 'County_Board_of_Education_Districts' layer in the same org names 4 SB areas (A-D) plus neighboring counties' areas; seat composition therefore unverified. Supersedes the earlier WAF-400-rejected candidate (UvqJJ6GFv4u5BZQj, expected 4).",
+  "features": 5,
+  "filename": "school_board_districts_unknown.geojson",
+  "folder": "counties/ca/san_bernardino/school_board_districts",
+  "lines_last_redrawn": "unknown",
+  "published": "unknown",
+  "source": "San Bernardino County (official County_Of_San_Bernardino AGL org, County_of_San_Bernardino_Board_of_Education_Areas)",
+  "source_url": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/County_of_San_Bernardino_Board_of_Education_Areas/FeatureServer/0"
+ },
+ "counties/ca/san_diego/county_commission_districts/county_commission_districts_unknown.geojson": {
+  "description": "San Diego County (CA) supervisorial districts (5 polygons; 5-supervisor/5-district structure verified by extent + count. Service does not export attributes; polygons unlabeled. County extent verified against known San Diego County bounds.",
+  "features": 5,
+  "filename": "county_commission_districts_unknown.geojson",
+  "folder": "counties/ca/san_diego/county_commission_districts",
+  "lines_last_redrawn": "unknown (current map as of 2026)",
+  "published": "unknown",
+  "source": "San Diego County (ntorres_sdf AGL org, Supervisor_Districts_(1) layer)",
+  "source_url": "https://services1.arcgis.com/uBhCzcYTOtHrwN5X/arcgis/rest/services/Supervisor_Districts_(1)/FeatureServer/0"
+ },
  "counties/ca/santa_clara/county_commission_districts/county_commission_districts_2021.geojson": {
   "description": "Santa Clara County (CA) supervisorial districts (5 unlabeled; 5-supervisor board verified by count; 2021 plan; no labels in source).",
   "features": 5,
@@ -478,6 +548,16 @@
   "published": "2021",
   "source": "Santa Clara County CA (SCC.Planning.Office, layer 24 'Supervisor 2021 Districts')",
   "source_url": "https://services2.arcgis.com/tcv2cMrq63AgvbHF/arcgis/rest/services/Supervisorial_Districts_2021/FeatureServer/24"
+ },
+ "counties/ca/santa_clara/school_board_districts/school_board_districts_2022.geojson": {
+  "description": "Santa Clara County (CA) Board of Education trustee areas (7 polygons, 7-trustee board; 2022 map per layer title; county extent verified. Service does not export attributes.",
+  "features": 7,
+  "filename": "school_board_districts_2022.geojson",
+  "folder": "counties/ca/santa_clara/school_board_districts",
+  "lines_last_redrawn": "2022 (per layer title)",
+  "published": "unknown",
+  "source": "Santa Clara County BOE 2022 (Danny_JamiiTech AGL org, Santa_Clara_County_Board_of_Education_Trustee_Areas_2022)",
+  "source_url": "https://services6.arcgis.com/qOD6P9mFnaiJRBZ0/arcgis/rest/services/Santa_Clara_County_Board_of_Education_Trustee_Areas_2022/FeatureServer/0"
  },
  "counties/ca/santa_cruz/county_commission_districts/county_commission_districts_2025.geojson": {
   "description": "Santa Cruz County (CA) supervisorial districts (5, labeled 'Supervisorial District 1-5'; 5-supervisor board verified). Layer 18 (not layer 0 \u2014 layer-index fix technique).",

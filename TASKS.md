@@ -2605,3 +2605,35 @@ Status legend: [ ] not started · [~] in progress · [x] done
 - [ ] Local-level: more district-based county boards (SC/NC/MN/FL), gap
       cities (Detroit, NOLA, Philly, KC, Memphis, LA, Austin, ...), retry
       Milwaukee + Santa Clara County (WAF 400s).
+
+## Round 257 (CA top-10 gap fill — user request)
+- [x] Inventory CA county commission + school board coverage:
+      had LA, Orange, Santa Clara, Contra Costa, Solano, Santa Cruz,
+      Sonoma, Mariposa (commission); Alameda, Inyo, San Benito
+      (school board). Missing commissions: San Diego, Riverside,
+      San Bernardino, Alameda, Sacramento, Fresno. Missing school
+      boards: LA, San Diego, Orange, Riverside, San Bernardino,
+      Santa Clara, Contra Costa, Sacramento, Fresno.
+- [x] **6 new county commission files** (all 5 polygons, extents
+      verified against county bounds; Riverside also landmark
+      point-in-polygon verified):
+      - San Diego (ntorres_sdf, 1st-5th districts + supervisor names)
+      - Riverside (official GISOpenData@rivco.org GDB_PUB, 2021 map)
+      - San Bernardino (official org, clean 5-poly layer — supersedes
+        the rejected 5+7-blank variant)
+      - Alameda (official AlamedaCounty.CA.US org)
+      - Sacramento (SCGISAdmin, labeled District 1-5 + supervisor names)
+      - Fresno (official ELECTIONS_SUPERVISOR_DISTRICTS, CD_SUPRDIS 401-405)
+- [x] **2 new school board (county BOE) files**:
+      - San Bernardino (official org "areas" layer, 5 polygons,
+        unlabeled — seat composition caveat documented)
+      - Santa Clara (2022 trustee areas, 7 polygons = 7-trustee board,
+        unlabeled)
+- [x] School boards NOT retrievable for the top 10: LA + Orange
+      (services respond with 0-layer stubs / 400), San Diego /
+      Contra Costa / Sacramento / Fresno (no AGL hits; CUSD Fresno
+      hits are draft "Proposed" plans — rejected per curation rules;
+      "Fresno_County_BOE" is a San Benito County copy — unofficial).
+- [x] Catalog re-render (418 rows) + full verify.py: **ALL GOOD**
+      (418 files; county_commission 1055→1085; school_board
+      842→854).

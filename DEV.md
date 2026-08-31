@@ -306,6 +306,31 @@ stable since; verify per county). City files use the map year.
    count query one minute later can 400 for an entire fetch attempt. Treat
    400s as retryable-later (a few hours), not permanent, and never commit
    partial merges of a multi-service source.
+ 10. **Attribute export is inconsistent per service** (round 257): some
+     services return `properties: null` on BOTH `f=json` and `f=geojson`
+     (e.g. Santa Clara COEE 2022, SB COEE areas), while a DIFFERENT service
+     for the same data may export attributes fine (the SD ntorres_sdf probe
+     showed nulls until `tools/fetch_arcgis.py`'s own paginated `f=geojson`
+     fetch exported supervisor names correctly). Don't reject on a single
+     probe — run the real fetcher and check the written file's properties
+     before deciding a layer is "unlabeled".
+ 11. **0-layer stub responses** (round 257): some AGL-registered services
+     answer layer queries with `name=None`, empty `fields`, `n=0` instead of
+     400 — e.g. LA County BOE `School_Districts_Trustee_Areas` (PLai@rrcc.
+     lacounty.gov) and Orange COEE `OCDE_Districts` (AGarcia_OCDE_GIS).
+     These are effectively WAF-deferred; retry later.
+ 12. **Top-10 CA counties are now fully covered for county commissions**
+     (round 257): LA, Orange, Santa Clara, Contra Costa, Solano, Santa Cruz,
+     Sonoma, Mariposa + new San Diego, Riverside, San Bernardino, Alameda,
+     Sacramento, Fresno. County BOE trustee areas for top-10: Alameda,
+     San Bernardino, Santa Clara. Still missing BOE areas: LA, San Diego,
+     Orange, Riverside, Contra Costa, Sacramento, Fresno (no reachable
+     official source found on AGL; CUSD "Proposed Trustee Areas" hits are
+     draft plans — reject per curation rules).
+ 13. Riverside County's eastern boundary really does extends deep into the
+     Mojave (~-114.4); the "wide extent" is correct, not a bad polygon
+     (verified via landmark point-in-polygon: Palm Springs/Cathedral City
+     in, Apple Valley/Victorville out).
 
 ## Conventions
 
