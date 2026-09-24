@@ -381,21 +381,33 @@ redistricting cycle) — results:
   NH (+1/+1), LA house (+1), ME senate (+1), SD house (+2 unnamed), HI (+1/+1
   vs 50/20 convention — TIGER 51/25 is the enacted 2022 plan).
 
-## Version control policy (round 5)
-- `git init` done (branch `main`); `.gitignore` excludes `data/` (2.2 GB
-  GeoJSON), `.tools/venv/`, and `.tools/cache/`. Tracked: all docs
-  (README/TASKS/PROGRESS/DEV), `tools/*.py`, `tools/arcgis_manifest.json`,
-  `CATALOG.csv`, `.tools/catalog.json` (the catalog source of truth).
-- **data/ is reproducible, not archived, in git**: every file can be
-  re-fetched with `tools/fetch_tiger.py` (Census TIGER2025) and
-  `tools/fetch_arcgis.py` (manifest-driven). Remote exists:
-  `origin` = `https://github.com/pulse-ds/georepo` (public, created
-  round 257); `main` tracks `origin/main`. If the data must be
-  versioned, install `git-lfs` and add
-  `data/**/*.geojson filter=lfs diff=lfs merge=lfs -text` to
-  `.gitattributes` — but do NOT commit the raw 2.2 GB without LFS.
+## Version control policy (round 5; updated round 257 — data IS in git)
+- `git init` done (branch `main`). Remote: `origin` =
+  `https://github.com/pulse-ds/georepo` (public, created round 257);
+  `main` tracks `origin/main`.
+- Tracked: all docs (README/TASKS/PROGRESS/DEV), `tools/*.py`,
+  `tools/arcgis_manifest.json`, `CATALOG.csv`, `.tools/catalog.json`
+  (the catalog source of truth), and — as of round 257 — the full
+  `data/` tree (418 GeoJSON files, ≈2.3 GB, 141,154 features).
+  `.gitignore` still excludes `.tools/venv/` and `.tools/cache/`.
+- **Git LFS**: GitHub rejects single files >100 MB, so files over that
+  size are LFS-tracked via `.gitattributes` (currently:
+  `data/us/counties/county_boundaries_2025.geojson`, 182 MB). Any NEW
+  data file >100 MB MUST be added to `.gitattributes` before
+  `git add` (pattern: `<path> filter=lfs diff=lfs merge=lfs -text`).
+  git-lfs is NOT installed system-wide in this sandbox; the binary used
+  is at `/tmp/gitlfs/git-lfs` (v3.8.0, re-download from
+  github.com/git-lfs/git-lfs releases if missing) — run
+  `PATH=/tmp/gitlfs:$PATH git lfs install --local` first.
+- Cloning the repo: `git clone ... && git lfs pull` (or `git
+  lfs install` + `git lfs fetch --all`).
+- data/ is still reproducible (tools/fetch_tiger.py +
+  tools/fetch_arcgis.py), so the git archive doubles as a snapshot, not
+  the only copy.
 - Commit convention: one commit per round of work; message starts with
   the round (e.g. "Round 5: +4 city files, git policy").
+- Watch the free-plan LFS quota (1 GB LFS storage / 25 GB transfer
+  per month): only ~182 MB is in LFS, so there is large headroom.
 
 ## Open questions / decisions for future rounds
 

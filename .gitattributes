@@ -1,0 +1,10 @@
+# Git LFS (round 257): GitHub rejects individual files >100 MB, so the
+# few oversized GeoJSON files are tracked in LFS. Keep this list in sync
+# when adding data: any new data file >100 MB MUST be added here
+# (pattern: <path> filter=lfs diff=lfs merge=lfs -text).
+#
+# Current >100 MB files:
+data/us/counties/county_boundaries_2025.geojson filter=lfs diff=lfs merge=lfs -text
+
+# All other data files are plain git (total data ≈ 2.3 GB, largest
+# non-LFS file 89 MB).
