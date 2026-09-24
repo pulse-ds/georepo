@@ -388,8 +388,10 @@ redistricting cycle) — results:
   `CATALOG.csv`, `.tools/catalog.json` (the catalog source of truth).
 - **data/ is reproducible, not archived, in git**: every file can be
   re-fetched with `tools/fetch_tiger.py` (Census TIGER2025) and
-  `tools/fetch_arcgis.py` (manifest-driven). If a remote is added later
-  and the data must be versioned, install `git-lfs` and add
+  `tools/fetch_arcgis.py` (manifest-driven). Remote exists:
+  `origin` = `https://github.com/pulse-ds/georepo` (public, created
+  round 257); `main` tracks `origin/main`. If the data must be
+  versioned, install `git-lfs` and add
   `data/**/*.geojson filter=lfs diff=lfs merge=lfs -text` to
   `.gitattributes` — but do NOT commit the raw 2.2 GB without LFS.
 - Commit convention: one commit per round of work; message starts with
